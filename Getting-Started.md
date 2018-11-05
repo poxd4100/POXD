@@ -96,4 +96,4 @@ You're done getting set up, now it's time to learn more about what you can do wi
 * [Category JSON Format](https://github.com/Vazkii/Patchouli/wiki/Category-JSON-Format)
 * [Entry JSON Format](https://github.com/Vazkii/Patchouli/wiki/Entry-JSON-Format)
     * [Default Page Types](https://github.com/Vazkii/Patchouli/wiki/Default-Page-Types)
-* [Template JSON Format](https://github.com/Vazkii/Patchouli/wiki/Template -JSON-Format)
+* [Template JSON Format](https://github.com/Vazkii/Patchouli/wiki/Template-JSON-Format)
