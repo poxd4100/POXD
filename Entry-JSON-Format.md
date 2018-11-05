@@ -8,7 +8,7 @@ The name of this entry.
 
 * **category** (String, _mandatory_)
 
-The category this entry belongs to. This must be set to one of your categories. The name of which being the name of the json file (e.g. "test_category.json" would be "test_category" here).
+The category this entry belongs to. This must be set to one of your categories' IDs.
 
 * **icon** (String, _mandatory_)
 
