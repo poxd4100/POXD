@@ -22,7 +22,7 @@ A config flag expression that determines whether this category should exist or n
 
 * **sortnum** (integer)
 
-The sorting number for this categories. Defaults to 0. Categories are sorted in the main page from lowest sorting number to highest, so if you define this in every category you make, you can set what order they display in.
+The sorting number for this category. Defaults to 0. Categories are sorted in the main page from lowest sorting number to highest, so if you define this in every category you make, you can set what order they display in.
 
 * **secret** (boolean)
 
