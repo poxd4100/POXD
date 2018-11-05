@@ -97,3 +97,10 @@ You're done getting set up, now it's time to learn more about what you can do wi
 * [Entry JSON Format](https://github.com/Vazkii/Patchouli/wiki/Entry-JSON-Format)
     * [Default Page Types](https://github.com/Vazkii/Patchouli/wiki/Default-Page-Types)
 * [Template JSON Format](https://github.com/Vazkii/Patchouli/wiki/Template-JSON-Format)
+
+Lastly, here's a few pointers you should take in mind.
+
+* You need to reload the game to load new book.json files, but not the book contents.
+* Book contents are purely client sided, whereas book.json files are loaded by the server too.
+* You don't have to put your entries in folders corresponding to the categories they belong in, but it helps with organization!
+* No dependencies are needed if you're a modder, not even any code. Patchouli automatically finds your files in your assets if you put them in the right place.
