@@ -8,7 +8,7 @@ The name of this entry.
 
 * **category** (String, _mandatory_)
 
-The category this entry belongs to. This must be set to one of your categories' IDs.
+The category this entry belongs to. This must be set to one of your categories' ID.
 
 * **icon** (String, _mandatory_)
 
