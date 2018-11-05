@@ -26,8 +26,8 @@ Open up your book.json using your favorite text editor, and fill it in as follow
 
 ```json
 {
-	"name": "_BOOK NAME_",
-	"landing_text": "_LANDING TEXT_",
+	"name": "BOOK NAME",
+	"landing_text": "LANDING TEXT",
 	"version": 1
 }
 ```
