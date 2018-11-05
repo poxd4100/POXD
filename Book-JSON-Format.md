@@ -121,3 +121,7 @@ Define this to set this book as an extension of another. See [Extending Existing
 * **allow_extensions** (boolean)
 
 Defaults to true. Set it to false if you want to not play nice and lock your book from being extended by other books.
+
+* **macros** (Object)
+
+A list of formatting macros this book should use. See [Text Formatting 101](https://github.com/Vazkii/Patchouli/wiki/Text-Formatting-101) for more info on how you can define these and what they do.
