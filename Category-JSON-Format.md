@@ -1,5 +1,7 @@
 This page details every key you can have in a Category json file.
 
+While not described as a format key, the "category ID" of a category is the path necessary to get to it from /en_us/categories. So if your category is in "/en_us/categories/misc/cool_stuff.json", its ID would be "misc/cool_stuff".
+
 * **name** (String, _mandatory_)
 
 The name of this category.
