@@ -1,5 +1,7 @@
 This page details every key you can have in an Entry json file.
 
+While not described as a format key, the "entry ID" of an entry is the path necessary to get to it from /en_us/entries. So if your entry is in "/en_us/entries/misc/cool_stuff.json", its ID would be "misc/cool_stuff".
+
 * **name** (String, _mandatory_)
 
 The name of this entry.
