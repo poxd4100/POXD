@@ -1,7 +1,7 @@
 This entry serves as a quick guide of what to do to get started making your own Patchouli books, read on and follow carefully!
 
 ### 0. Install Patchouli
-Pretty obvious. For modders, you can load it as a lib to your mod project or just drop it in your workspace's mods folders.
+Pretty obvious. For modders, you can load it as a lib to your mod project or just drop it in your workspace's mods folder.
 
 ### 1. Locate your patchouli_books directory
 Your books and their contents will go in your patchouli_books directory, so you need to find it.
