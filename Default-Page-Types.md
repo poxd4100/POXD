@@ -107,7 +107,32 @@ The text to display on this page, under the recipes. This text can be [formatted
 
 ## Multiblock Pages
 
-TODO
+![](https://i.imgur.com/uTt7Zsc.png)  
+Page type: **"multiblock"**
+
+* **name** (String, _mandatory_)
+
+The name of the multiblock you're displaying. Shows as a header above the multiblock display.
+
+* **multiblock_id** (String)
+
+For modders only. The ID of the multiblock you want to display. See [API Usage](https://github.com/Vazkii/Patchouli/wiki/API-Usage) for how to create and register Multiblocks in code.
+
+_Note: Either this or "multiblock" need to be set for this page type to work._
+
+* **multiblock** (Object)
+
+The multiblock object to display. See [Using Multiblocks](https://github.com/Vazkii/Patchouli/wiki/Using-Multiblocks) for how to create this object.
+
+_Note: Either this or "multiblock_id" need to be set for this page type to work._
+
+* **enable_visualize** (boolean)
+
+Defaults to true. Set this to false to disable the "Visualize" button.
+
+* **text** (String)
+
+The text to display on this page, under the multiblock. This text can be [formatted](https://github.com/Vazkii/Patchouli/wiki/Text-Formatting-101).
 
 ## Entity Pages
 
