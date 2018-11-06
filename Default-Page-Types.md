@@ -58,3 +58,27 @@ Defaults to false. Set to true if you want the image to be bordered, like in the
 * **text** (String)
 
 The text to display on this page, under the image. This text can be [formatted](https://github.com/Vazkii/Patchouli/wiki/Text-Formatting-101).
+
+## Crafting Recipe Pages
+
+![](https://i.imgur.com/ySSi5zL.png)  
+Page type: **"crafting"**
+
+**Attibutes**:
+* **recipe** (String, _mandatory_)
+
+The ID of the first recipe you want to show.
+
+* **recipe2** (String)
+
+The ID of the second recipe you want to show. Displaying two recipes is optional.
+
+* **title** (String)
+
+The title of the page, to be displayed above both recipes. This is optional, but if you include it, only this title will be displayed, rather than the 
+
+* **text** (String)
+
+The text to display on this page, under the recipes. This text can be [formatted](https://github.com/Vazkii/Patchouli/wiki/Text-Formatting-101).
+
+Note: the text will not display if there are two recipes with two different outputs, and "title" is not set. This is the case of the image displayed, in which both recipes have the output names displayed, and there's no space for text.
