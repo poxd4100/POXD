@@ -75,10 +75,56 @@ The ID of the second recipe you want to show. Displaying two recipes is optional
 
 * **title** (String)
 
-The title of the page, to be displayed above both recipes. This is optional, but if you include it, only this title will be displayed, rather than the 
+The title of the page, to be displayed above both recipes. This is optional, but if you include it, only this title will be displayed, rather than the names of both recipe output items.
 
 * **text** (String)
 
 The text to display on this page, under the recipes. This text can be [formatted](https://github.com/Vazkii/Patchouli/wiki/Text-Formatting-101).
 
 Note: the text will not display if there are two recipes with two different outputs, and "title" is not set. This is the case of the image displayed, in which both recipes have the output names displayed, and there's no space for text.
+
+## Smelting Recipe Pages
+
+![](https://i.imgur.com/noBfGCc.png)  
+Page type: **"smelting"**
+
+**Attibutes**:
+* **recipe** (String, _mandatory_)
+
+The first recipe you want to show. Given that furnace recipes are only named properly as of 1.13, instead of using a recipe ID, we use an [ItemStack String](https://github.com/Vazkii/Patchouli/wiki/ItemStack-String-Format) that corresponds to the item being smelted, so if you wanted to show the recipe for smelting sand to glass, you'd use "minecraft:sand" here.
+
+* **recipe2** (String)
+
+The second recipe you want to show. See "recipe" above for format. Displaying two recipes is optional.
+
+* **title** (String)
+
+The title of the page, to be displayed above both recipes. This is optional, but if you include it, only this title will be displayed, rather than the names of both recipe output items.
+
+* **text** (String)
+
+The text to display on this page, under the recipes. This text can be [formatted](https://github.com/Vazkii/Patchouli/wiki/Text-Formatting-101).
+
+## Multiblock Pages
+
+TODO
+
+## Entity Pages
+
+TODO
+
+## Spotlight Pages
+
+TODO
+
+## Link Pages
+
+TODO
+
+## Relations Pages
+
+TODO
+
+## Empty Pages
+
+TODO
