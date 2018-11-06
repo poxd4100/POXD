@@ -8,6 +8,10 @@ The following attributes are common to every page type:
 
 What type this page is. This isn't used by the page itself, but rather by the loader to determine what page should be loaded. For example, if you want a text page, you set this to "text".
 
+* **advancement** (String)
+
+A resourcelocation to point at, to make a page appear when that advancement is completed. See [Locking Content with Advancements](https://github.com/Vazkii/Patchouli/wiki/Locking-Content-with-Advancements) for more info on locking content. Excluding this attribute or leaving it empty will leave the page unlocked from the start. Providing a nonexistent advancement will permanently lock this entry unless the advancement at the resourcelocation starts existing!
+
 * **flag** (String)
 
 A config flag expression that determines whether this page should exist or not. See [Using Config Flags](https://github.com/Vazkii/Patchouli/wiki/Using-Config-Flags) for more info on config flags.
