@@ -10,7 +10,7 @@ What type this page is. This isn't used by the page itself, but rather by the lo
 
 * **advancement** (String)
 
-A resourcelocation to point at, to make a page appear when that advancement is completed. See [Locking Content with Advancements](https://github.com/Vazkii/Patchouli/wiki/Locking-Content-with-Advancements) for more info on locking content. Excluding this attribute or leaving it empty will leave the page unlocked from the start. Providing a nonexistent advancement will permanently lock this entry unless the advancement at the resourcelocation starts existing!
+A resource location to point at, to make a page appear when that advancement is completed. See [Locking Content with Advancements](https://github.com/Vazkii/Patchouli/wiki/Locking-Content-with-Advancements) for more info on locking content. Excluding this attribute or leaving it empty will leave the page unlocked from the start. Providing a nonexistent advancement will permanently lock this entry unless the advancement at the resource location starts existing.
 
 * **flag** (String)
 
@@ -52,8 +52,6 @@ Page type: **"image"**
 An array with images to display. Images should be in resource location format and suffixed with ".png". Images used here should ideally be dimensioned as 256x256, and use only a 200x200 canvas centered in the top-left corner for contents, which are rendered at a 0.5x scale compared to the rest of the book in pixel size.
 
 If there's more than one image in this array, arrow buttons are shown like in the picture, allowing the viewer to switch between images. If there's only one image, they're not.
-
-For modpack makers, if you want to use your own images, you'll need another tool to load them in, such as [Resource Loader](https://minecraft.curseforge.com/projects/resource-loader).
 
 * **title** (String)
 
