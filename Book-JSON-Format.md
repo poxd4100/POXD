@@ -72,6 +72,22 @@ The color of link text, in hex ("RRGGBB", # not necessary). Defaults to "0000EE"
 
 The color of hovered link text, in hex ("RRGGBB", # not necessary). Defaults to "8800EE".
 
+* **proress_bar_color** (String)
+
+The color of advancement progress bar, in hex ("RRGGBB", # not necessary). Defaults to "FFFF55".
+
+* **proress_bar_background** (String)
+
+The color of advancement progress bar's background, in hex ("RRGGBB", # not necessary). Defaults to "DDDDDD".
+
+* **open_sound** (String)
+
+The sound effect played when opening this book. This is a resource location pointing to the sound (which, for mooders, needs to be properly registered). 
+
+* **flip_sound** (String)
+
+The sound effect played when flipping through pages in this book. This is a resource location pointing to the sound (which, for mooders, needs to be properly registered). 
+
 * **version** (String)
 
 The "edition" of the book. This defaults to "0", and setting this to any other numerical value (let's call it X) will display "X Edition" in the book's tooltip and landing page (e.g. X being 3 would display "3rd Edition"). Setting this to "0" or not modifying it will instead display whatever you set the "subtitle" key as. If the value is non-numerical, it'll display "Writer's Edition".
