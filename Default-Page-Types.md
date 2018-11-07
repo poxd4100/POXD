@@ -38,6 +38,10 @@ Page type: **"text"**
 
 The text to display on this page. This text can be [formatted](https://github.com/Vazkii/Patchouli/wiki/Text-Formatting-101).
 
+* **title** (String)
+
+An optional title to display at the top of the page. If you set this, the rest of the text will be shifted down a bit. You can't use "title" in the first page of an entry.
+
 ## Image Pages
 ![](https://i.imgur.com/NnWb10b.png)  
 Page type: **"image"**
