@@ -17,6 +17,16 @@ Formatting codes can be tested out in real time using the ingame editor (the pen
 * **$(l:http://...)** - External Link, similar to previous, but when clicked, opens the website
 * **$(/l)** - End Link, ends the current link but maintains formatting ($() also ends links)
 * **$(playername)** - Inserts the name of the player
+* **$(k:...)** - Inserts the key value of the keybind you place after "k:". Read below for how get the keybind name.
+
+**Using $(k:...)**:  
+To find the name of a keybind, open your options.txt file in your instance folder (next to /mods, /config, etc) with a text editor, and browse the values that start with "key_", until you find one that looks like the one you want (these are internal names the mods use).
+
+Say you want to show the F5 (Toggle Perspective) key. You'd look for `key_key.togglePerspective:63`. You then grab that line of text and do the following:
+* Remove the "key_" at the start, and the ":N" at the end (N being whatever number is there).
+* If the name you have now starts with "key.", you can remove that too.
+* If the name you have now has any spaces, replace them all with **-**
+* You now have the name to put inside $(k:...). In this case, you'd write $(k:togglePerspective), and it would replace in the book to F5, or whatever the player has that keybind set to.
 
 ## Default Macros
 
