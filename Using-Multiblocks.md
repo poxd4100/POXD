@@ -57,7 +57,7 @@ Looks good. Let's put these mappings into our json using a "mapping" block:
 }
 ```
 
-### Pattern
+### The Pattern
 
 Now that we told the multiblock what blocks to use, we need to tell it the shape. To do this, we go from the top to bottom, layer by layer, and transpose each layer to a string array. Let's start with the first layer with the plus made of terracotta. It would look something like this:
 ```
@@ -125,13 +125,55 @@ Look at that! We now have a side view of the structure. Just one last thing left
 
 We specify the center by replacing one of the characters in the pattern with a zero. By default the zero is mapped to Air, but if you need to map it to something else, you can always just put a "0" in the mappings with whatever you want it to be.
 
-For this case we'll just place the center in the geometrical center of the structure:
+The "zero" of the multiblock is placed at the player's world cursor. On less fancy words, if you were to place a block, where it would end up is where the zero ends up. 
+
+Knowing that, the ideal right place for the zero of this structure would be in the geometrical center, but one block down so that it's right above the W:
 ```
 "pattern": [
     [ " GRG ", "GGRGG", "RRRRR", "GGRGG", " GRG " ], 
     [ "GG GG", "G   G", "     ", "G   G", "GG GG" ],
-    [ "G   G", "     ", "  0  ", "     ", "G   G" ], 
     [ "G   G", "     ", "     ", "     ", "G   G" ], 
+    [ "G   G", "     ", "  0  ", "     ", "G   G" ], 
     [ "_WWW_", "WWWWW", "WWWWW", "WWWWW", "_WWW_" ]
 ]
 ```
+
+### Some Extra Things
+
+There's a few more values a multiblock can have:
+
+* **symmetrical** (boolean)
+
+Defaults to false. Set this to true if the multiblock is symmetrical around the vertical axis of its center (if rotating it around in 90º increments doesn't change its look in the world). It's not obligatory, but if you do it, Patchouli won't check all rotations so it's better for performance.
+
+* **offset** (int Array, 3 values)
+
+An int array of 3 values ([X, Y, Z]) to offset the multiblock relative to its center.
+
+For our case, we'll be setting symmetrical to true, and not specifying offset, as we already put the 0 in the right place.
+
+### Adding Everything Together
+
+Let's add our pattern, mapping, and other values together, and we get:
+
+```
+"multiblock": {
+    "pattern": [
+        [ " GRG ", "GGRGG", "RRRRR", "GGRGG", " GRG " ], 
+        [ "GG GG", "G   G", "     ", "G   G", "GG GG" ],
+        [ "G   G", "     ", "     ", "     ", "G   G" ], 
+        [ "G   G", "     ", "  0  ", "     ", "G   G" ], 
+        [ "_WWW_", "WWWWW", "WWWWW", "WWWWW", "_WWW_" ]
+    ],
+    "mapping": {
+        "G": "minecraft:gold_block",
+        "W": "minecraft:wool",
+        "R": "minecraft:stained_hardened_clay[color=red]"
+    },
+    "symmetrical": true
+}
+```
+
+Which, if we transplant onto a "multiblock" page (see [Default Page Types](https://github.com/Vazkii/Patchouli/wiki/Default-Page-Types#multiblock-pages)), and click Visualize, will show up just fine ingame!
+
+![](https://i.imgur.com/1lfoaA1.png)
