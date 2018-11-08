@@ -142,20 +142,88 @@ The text to display on this page, under the multiblock. This text can be [format
 
 ## Entity Pages
 
-TODO
+![](https://i.imgur.com/suEQTN4.png)  
+Page type: **entity**
+
+**Attibutes**:
+* **entity** (String, _mandatory_)
+
+The ID of the entity you want to display. To display a chicken you'd use "minecraft:chicken".
+
+* **scale** (float)
+
+The scale to display the entity at. Defaults to 1.0. Values lower than 1.0 will have the entity be smaller than usual, while higher than 1.0 will have it be larger. Negative values will flip it upside down.
+
+* **offset** (float)
+
+An amount to offset the entity display. Some mod entities have weird renders and won't fit in the box properly, you can change this to move them up and down.
+
+* **name** (String)
+
+The name to display on top of the frame. If this is empty or not defined, it'll grab the name of the entity and use that instead.
+
+* **text** (String)
+
+The text to display on this page, under the entity. This text can be [formatted](https://github.com/Vazkii/Patchouli/wiki/Text-Formatting-101).
 
 ## Spotlight Pages
 
-TODO
+![](https://i.imgur.com/W7ezngF.png)  
+Page type: **"spotlight"**
+
+**Attibutes**:
+* **item** (String, _mandatory_)
+
+An [ItemStack String](https://github.com/Vazkii/Patchouli/wiki/ItemStack-String-Format) representing the item to be spotlighted.
+
+* **title** (String)
+
+A custom title to show instead on top of the item. If this is empty or not defined, it'll use the item's name instead.
+
+* **link_recipe** (boolean)
+
+Defaults to false. Set this to true to mark this spotlight page as the "recipe page" for the item being spotlighted. If you do so, when looking at recipe pages that display the item, you can shift-click the item to be taken to this page. Highly recommended if the spotlight page has instructions on how to create an item by non-conventional means.
 
 ## Link Pages
 
-TODO
+![](https://i.imgur.com/AQST9Jf.png)  
+Page type: **link**
+
+**Note:** Link pages are just specialized Text pages, which means they can work just like text pages, with the additional link button on the bottom. They also have all the attributes text pages do, and you can use them as the first page in your entry.
+
+**Attributes**:
+* **url** (String, _mandatory_)
+
+The URL to open when clicking the button. In theory everything is supported, but please stick to HTTP/HTTPS addresses.
+
+* **link_text** (String, _mandatory_)
+
+The text to display on the link button.
 
 ## Relations Pages
 
-TODO
+![](https://i.imgur.com/rBaxf4d.png)  
+Page type: **relations**
+
+**Attributes**:
+* **entries** (String Array)
+
+An array of the entries that should be linked in this page. These are the IDs of the entries you want to link to in the same way you'd link an entry to a category's ID.
+
+* **title** (String)
+
+The title of this page, to display above the links. If this is missing or empty, it'll show "Related Chapters" instead.
+
+* **text** (String)
+
+The text to display on this page, under the links. This text can be [formatted](https://github.com/Vazkii/Patchouli/wiki/Text-Formatting-101).
 
 ## Empty Pages
 
-TODO
+![](https://i.imgur.com/9gv6Dje.png)  
+Page type: **empty**
+
+**Attributes**:
+* **draw_filler** (boolean)
+
+Defaults to true. Set to false to draw a completely empty page, without the page filler... for whatever reason.
