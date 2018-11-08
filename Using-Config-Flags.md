@@ -2,6 +2,8 @@ Config Flags are a system that allows content in the book to be dynamically hot 
 
 Flags are boolean values (true or false), and expressions can be a few flags connected to create a statement based on multiple flags. More often than not, you won't need to write an expression, and can just write the flag itself. Should you write the name of a flag that's not defined, it defaults to false.
 
+Any content (all the way from category, entry, page, or even template component) will be disabled if it has a flag expression assigned to it, and said expression happens to evaluate to false.
+
 ## Default Flags
 
 * **debug**: Is true when the game is being loaded from an IDE Debug mode
