@@ -109,4 +109,3 @@ Lastly, here's a few pointers you should take in mind.
 * Book contents are purely client sided, whereas book.json files are loaded by the server too.
 * You don't have to put your entries in folders corresponding to the categories they belong in, but it helps with organization!
 * No dependencies are needed if you're a modder, not even any code. Patchouli automatically finds your files in your assets if you put them in the right place.
-* You can see some example books used for testing patchouli in this [very repository](../tree/master/src/main/resources/assets/patchouli/patchouli_books).
