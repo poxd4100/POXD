@@ -7,5 +7,5 @@ Here's a few articles to get you started:
 * [Getting Started](https://github.com/Vazkii/Patchouli/wiki/Getting-Started)
 
 As well as some code/examples:
-* [Book Examples](../tree/master/src/main/resources/assets/patchouli/patchouli_books).
+* [Book Examples](../tree/master/src/main/resources/assets/patchouli/patchouli_books)
 * [API for Modders](../tree/master/src/main/java/vazkii/patchouli/api)
