@@ -1,6 +1,6 @@
 Entries in your Patchouli books can be locked until certain Advancements are accomplished. This page will give you a quick primer on how to accomplish this.
 
-* First things first, create your advancement. If you're a modder, make it as you usually would ([Minecraft Wiki reference](https://minecraft.gamepedia.com/Advancements)), and place it in /assets/MODID/advancements. If you're a modpack maker, you'll need to create your advancements using the [Triumph](https://minecraft.curseforge.com/projects/triumph)mod.
+* First things first, create your advancement. If you're a modder, make it as you usually would ([Minecraft Wiki reference](https://minecraft.gamepedia.com/Advancements)), and place it in /assets/MODID/advancements. If you're a modpack maker, you'll need to create your advancements using the [Triumph](https://minecraft.curseforge.com/projects/triumph) mod.
 
 * Once your advancement is done, grab its ID (which would be in the namespace:path format). For the sake of demonstration, we'll pretend the ID is "mymod:myadv".
 
@@ -12,3 +12,13 @@ Entries in your Patchouli books can be locked until certain Advancements are acc
     * Add the namespace to the "advancement_namespaces" array: `"advancement_namespaces": [ "mymod" ]`
     * Adding the namespace here tells patchouli that it needs to keep track of advancements in that namespace. You only have to do it once per namespace. If you have multiple books that use the namespace, only one needs it, but it's good practice to have it in all of them.
     * See [Book JSON Format](https://github.com/Vazkii/Patchouli/wiki/Book-JSON-Format) for more info.
+
+* You may also lock individual pages behind advancements. This is allowed but not exactly encouraged, as it can be confusing to players if you aren't conveying the information properly.
+    * To lock a page, simply fill the "advancement" field next to the page's "type" field, the same way you would for the entry itself.
+    * Locked pages do not display any "locked" indicator, but rather not displaying at all.
+    * See [Default Page Types](https://github.com/Vazkii/Patchouli/wiki/Default-Page-Types) for more info.
+
+* Some final pointers:
+    * All advancement locks can be disabled by the player with the config.
+    * Entries show up locked unless there's at least one unlocked entry within them.
+    * You can make invisible advancements by not including a "display" block in your advancement .json, which can be useful if you want to make a lot of small locks but don't want a horribly cluttered interface.
