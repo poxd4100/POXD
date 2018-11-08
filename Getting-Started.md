@@ -100,6 +100,7 @@ You're done getting set up, now it's time to learn more about what you can do wi
 
 Lastly, here's a few pointers you should take in mind.
 
+* You can see some example entries used for testing patchouli in this [very repository](../tree/master/src/main/resources/assets/patchouli/patchouli_books).
 * For modpack makers, if you want to use your own images, textures, sounds, or other assets, you'll need a tool to load them in, such as [Resource Loader](https://minecraft.curseforge.com/projects/resource-loader).
 * You need to reload the game to load new book.json files, but not the book contents.
 * Book contents are purely client sided, whereas book.json files are loaded by the server too.
