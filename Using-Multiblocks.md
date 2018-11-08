@@ -2,7 +2,7 @@ Patchouli comes with a system that allows you to define multiblocks and then vis
 
 This page is written like a tutorial to get you to understand how multiblock objects work, as writing the object structure formally wouldn't properly convey how to construct it.
 
-The page focuses on creating multiblocks using JSON, but the fundamentals also apply to doing so using code. Making multiblocks with code allows you to create state matchers using arbitrary predicates and using the multiblock for server-side validation and placement (if you allow Patchouli as a required mod). You can look into the [Patchouli API](https://github.com/Vazkii/Patchouli/tree/master/src/main/java/vazkii/patchouli/api) for how to do this, or see an example of it being done [here](https://github.com/Vazkii/Patchouli/blob/master/src/main/java/vazkii/patchouli/common/multiblock/MultiblockRegistry.java).
+The page focuses on creating multiblocks using JSON, but the fundamentals also apply to doing so using code. Making multiblocks with code allows you to create state matchers using arbitrary predicates and using the multiblock for server-side validation and placement (if you make Patchouli a required dependency). You can look into the [Patchouli API](https://github.com/Vazkii/Patchouli/tree/master/src/main/java/vazkii/patchouli/api) for how to do this, or see an example of it being done [here](https://github.com/Vazkii/Patchouli/blob/master/src/main/java/vazkii/patchouli/common/multiblock/MultiblockRegistry.java).
 
 ## Multiblock Format
 
@@ -55,4 +55,83 @@ Looks good. Let's put these mappings into our json using a "mapping" block:
          "W": "minecraft:wool"
      }
 }
+```
+
+### Pattern
+
+Now that we told the multiblock what blocks to use, we need to tell it the shape. To do this, we go from the top to bottom, layer by layer, and transpose each layer to a string array. Let's start with the first layer with the plus made of terracotta. It would look something like this:
+```
+[
+" GRG ",
+"GGRGG",
+"RRRRR",
+"GGRGG",
+" GRG "
+]
+```
+
+Recall that G is gold, R is red terracotta, and empty spaces are air. We can compress this a little so it doesn't look as bulky now:  
+``` [ " GRG ", "GGRGG", "RRRRR", "GGRGG", " GRG " ] ```
+
+It doesn't look as readable now that we aren't projecting it as a bird's eye view, but don't worry, it'll look good in a second. With that said, we put it into the "pattern" array, and follow through, adding in all the following layers:
+
+```
+"pattern": [
+    [ " GRG ", "GGRGG", "RRRRR", "GGRGG", " GRG " ],
+    [
+        "GG GG",
+        "G   G",
+        "     ",
+        "G   G",
+        "GG GG"
+    ],
+    [
+        "G   G",
+        "     ",
+        "     ",
+        "     ",
+        "G   G"
+    ], 
+    [
+        "G   G",
+        "     ",
+        "     ",
+        "     ",
+        "G   G"
+    ], 
+    [
+         "_WWW_",
+         "WWWWW",
+         "WWWWW",
+         "WWWWW",
+         "_WWW_"
+    ]
+]
+```
+
+...and compressing them:
+
+```
+"pattern": [
+    [ " GRG ", "GGRGG", "RRRRR", "GGRGG", " GRG " ], 
+    [ "GG GG", "G   G", "     ", "G   G", "GG GG" ],
+    [ "G   G", "     ", "     ", "     ", "G   G" ], 
+    [ "G   G", "     ", "     ", "     ", "G   G" ], 
+    [ "_WWW_", "WWWWW", "WWWWW", "WWWWW", "_WWW_" ]
+]
+```
+
+Look at that! We now have a side view of the structure. Just one last thing left to do. We need to tell the game where the center of the multiblock is. It might be intuitive that it's in the geometrical center, but in some cases you may have multiblocks that extend outwards, and the center doesn't exactly fall there. 
+
+We specify the center by replacing one of the characters in the pattern with a zero. By default the zero is mapped to Air, but if you need to map it to something else, you can always just put a "0" in the mappings with whatever you want it to be.
+
+For this case we'll just place the center in the geometrical center of the structure:
+```
+"pattern": [
+    [ " GRG ", "GGRGG", "RRRRR", "GGRGG", " GRG " ], 
+    [ "GG GG", "G   G", "     ", "G   G", "GG GG" ],
+    [ "G   G", "     ", "  0  ", "     ", "G   G" ], 
+    [ "G   G", "     ", "     ", "     ", "G   G" ], 
+    [ "_WWW_", "WWWWW", "WWWWW", "WWWWW", "_WWW_" ]
+]
 ```
