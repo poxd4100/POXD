@@ -100,9 +100,13 @@ You're done getting set up, now it's time to learn more about what you can do wi
 
 Lastly, here's a few pointers you should take in mind.
 
-* You can see some example books used for testing patchouli in this [very repository](../tree/master/src/main/resources/assets/patchouli/patchouli_books).
+* The patchouli book item's ID is "patchouli:item", the NBT tag for a specific book is `{"patchouli:book": "BOOKMOD:BOOKID"}`
+    * For example, a book in /assets/yourmod/patchouli_books/coolbook would be `{"patchouli:book": "yourmod:coolbook"}`
+    * Books loaded from the patchouli_books folder in your instance folder have "patchouli" as the mod ID
+    * If you need a CraftTweker script, grab your book and do `/mt hand`
 * For modpack makers, if you want to use your own images, textures, sounds, or other assets, you'll need a tool to load them in, such as [Resource Loader](https://minecraft.curseforge.com/projects/resource-loader).
 * You need to reload the game to load new book.json files, but not the book contents.
 * Book contents are purely client sided, whereas book.json files are loaded by the server too.
 * You don't have to put your entries in folders corresponding to the categories they belong in, but it helps with organization!
 * No dependencies are needed if you're a modder, not even any code. Patchouli automatically finds your files in your assets if you put them in the right place.
+* You can see some example books used for testing patchouli in this [very repository](../tree/master/src/main/resources/assets/patchouli/patchouli_books).
