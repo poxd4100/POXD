@@ -68,7 +68,7 @@ Note that the components are drawn in the order they appear here, so if you want
 
 * **include** (Object Array)
 
-A list of templates to include in this one. See [Nesting Components](https://github.com/Vazkii/Patchouli/wiki/Nesting-Components) for how to do this.
+A list of templates to include in this one. See [Template Nesting](https://github.com/Vazkii/Patchouli/wiki/Template-Nesting) for how to do this.
 
 * **processor** (String)
 
