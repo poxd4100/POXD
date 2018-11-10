@@ -181,6 +181,6 @@ Here's a [test example](https://github.com/Vazkii/Patchouli/blob/master/src/main
 
 * **class** (String, _mandatory_)
 
-A full class name pointing to a subtype of [ICustomComponent](https://github.com/Vazkii/Patchouli/blob/master/src/main/java/vazkii/patchouli/api/ICustomComponent.java). There's no need to register this class anywhere in code, just create it and the loader will take care of finding and loading it.
+A full class name (package.name.ClassName) pointing to a subtype of [ICustomComponent](https://github.com/Vazkii/Patchouli/blob/master/src/main/java/vazkii/patchouli/api/ICustomComponent.java). There's no need to register this class anywhere in code, just create it and the loader will take care of finding and loading it.
 
 * More values! Any non-transient values you put in your ICustomComponent implementation will also be read as component values. 
