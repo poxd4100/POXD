@@ -1,4 +1,4 @@
-Aside from the [Default Page Types](https://github.com/Vazkii/Patchouli/wiki/Default-Page-Types) shipped with Patchouli for you to use, you can also create your own! Creating new templates can be done through Patchouli's template system.
+Aside from the [Default Page Types](https://github.com/Vazkii/Patchouli/wiki/Default-Page-Types) shipped with Patchouli for you to use, you can also create your own! Creating new page types can be done through Patchouli's template system.
 
 Templates are created and referenced in a similar manner to entries and categories, and as such, they go in /patchouli_books/YOURBOOK/en_us/templates/yourtemplate.json, and they can be sorted in sub-folders of /templates.
 
