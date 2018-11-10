@@ -177,6 +177,8 @@ Modders only: Does whatever you'd like! You can pass in an instance of an interf
 
 Here's a [test example](https://github.com/Vazkii/Patchouli/blob/master/src/main/java/vazkii/patchouli/client/book/template/test/TestCustomComponent.java) you can refer to.
 
+**Attributes:**
+
 * **class** (String, _mandatory_)
 
 A full class name pointing to a subtype of [ICustomComponent](https://github.com/Vazkii/Patchouli/blob/master/src/main/java/vazkii/patchouli/api/ICustomComponent.java). 
