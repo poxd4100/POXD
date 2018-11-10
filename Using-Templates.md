@@ -64,6 +64,8 @@ The array of components this template comes with. In the following format:
 
 See [Template Components](https://github.com/Vazkii/Patchouli/wiki/Template-Components) for the components that Patchouli comes with and what data each one requires.
 
+Note that the components are drawn in the order they appear here, so if you want one to overlap another, put them in the right order.
+
 * **include** (Object Array)
 
 A list of templates to include in this one. See [Nesting Components](https://github.com/Vazkii/Patchouli/wiki/Nesting-Components) for how to do this.
