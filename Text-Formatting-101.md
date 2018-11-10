@@ -14,6 +14,7 @@ Formatting codes can be tested out in real time using the ingame editor (the pen
 * **$(0-f)** - Color code (e.g. $(6) makes the text gold color)
 * **$(k/l/m/n/o)** - Formatting code (e.g. $(o) makes the text italic)
 * **$(l:entryid)** - Internal Link, replace entryid with the id of an entry in your book and this will create a clickable link to it!
+* **$(l:entryid#anchorname)** - Internal Link, same as above, but refers to a specific page. The target page must have the "anchor" field set to the specified anchor name.
 * **$(l:http://...)** - External Link, similar to previous, but when clicked, opens the website
 * **$(/l)** - End Link, ends the current link but maintains formatting ($() also ends links)
 * **$(playername)** - Inserts the name of the player
