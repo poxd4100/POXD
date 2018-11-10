@@ -2,7 +2,7 @@ This page specifies the various page types provided by default in Patchouli. If 
 
 These pages should be used in Entries, in the "pages" array, via specifying which type you want by using "type" on each object. You can read more in [Entry JSON Format](https://github.com/Vazkii/Patchouli/wiki/Entry-JSON-Format).
 
-The following attributes are common to every page type:
+The following attributes are common to every page type:The ID of the entity you want to display. To display a chicken you'd use "minecraft:chicken". You can also add NBT data to the entity, in the same way you would in an [ItemStack String](https://github.com/Vazkii/Patchouli/wiki/ItemStack-String-Format)
 
 * **type** (String, _mandatory_)
 
@@ -148,7 +148,7 @@ Page type: **entity**
 **Attibutes**:
 * **entity** (String, _mandatory_)
 
-The ID of the entity you want to display. To display a chicken you'd use "minecraft:chicken".
+The ID of the entity you want to display. To display a chicken you'd use "minecraft:chicken". You can also add NBT data to the entity, in the same way you would in an [ItemStack String](https://github.com/Vazkii/Patchouli/wiki/ItemStack-String-Format).
 
 * **scale** (float)
 
