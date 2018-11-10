@@ -7,6 +7,7 @@ The following attributes are common to every component type:
 What type this component is. This isn't used by the component itself, but rather by the loader to determine what component should be loaded. For example, if you want a text component, you set this to "text".
 
 * **group** (String, _mandatory_)
+
 Modders only: The group used by this element. Groups are only used to allow [Component Processors](https://github.com/Vazkii/Patchouli/wiki/Component-Processors) to hide individual components based on code-level conditions.
 
 * **x** (integer)
