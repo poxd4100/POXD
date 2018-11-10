@@ -1,5 +1,7 @@
 Welcome to **Patchouli**, a mod aimed at providing High Quality Data-Driven Documentation for Modders and Modpack Makers. Mouthful of a slogan isn't it?
 
+![Front page of a Patchouli demo book](https://i.imgur.com/yIwTTRr.png)
+
 Here's a few articles to get you started:
 * **[Getting Started](https://github.com/Vazkii/Patchouli/wiki/Getting-Started)**
 * [Book JSON Format](https://github.com/Vazkii/Patchouli/wiki/Book-JSON-Format)
