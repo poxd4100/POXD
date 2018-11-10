@@ -175,7 +175,7 @@ Draws a frame for a 200x200 image using your book's texture. This looks just lik
 Component type: **"custom"**  
 Modders only: Does whatever you'd like! You can pass in an instance of an interface in the patchouli API for it to instantiate and pass stuff to.
 
-Here's a [test example](https://github.com/Vazkii/Patchouli/blob/master/src/main/java/vazkii/patchouli/client/book/template/test/TestCustomComponent.java) you can refer to.
+Here's a [test example](https://github.com/Vazkii/Patchouli/blob/master/src/main/java/vazkii/patchouli/client/book/template/test/TestCustomComponent.java) you can refer to. There's no need to register this class anywhere in code, just create it and the loader will take care of finding and loading it.
 
 **Attributes:**
 
