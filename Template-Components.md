@@ -50,7 +50,7 @@ The text to display: Can be a variable.
 
 * **color** (String)
 
-The default color of the text, in hex (e.g. "FF0000" would be pure red). If not set it defaults to the book's text color. Can be a variable.
+The color of the text, in hex (e.g. "FF0000" would be pure red). If not set it defaults to the book's text color. Can be a variable.
 
 * **max_width** (integer)
 
@@ -82,13 +82,11 @@ Defaults to false. Set this to true to mark any page this component is used in a
 Component type: **"image"**  
 Draws an image, or part of it.
 
-**Warning**: Using images whose width and height aren't powers of two (16, 32, 64, 128, 256, 1024...) will cause things to break. Do not do it.
-
 **Attributes:**
 
 * **image** (String, _mandatory)
 
-A resource location pointing to the image you want to draw. Can be a variable.
+A resource location pointing to the image you want to draw. Can be a variable. **Warning**: Using images whose width and height aren't powers of two (16, 32, 64, 128, 256, 1024...) will cause things to break. Do not do it.
 
 * **width** (integer, _mandatory_)
 
@@ -117,3 +115,64 @@ The height of the image you want to draw. If you don't set this it'll default to
 * **scale** (float)
 
 The scale at which you want to display this image. Defaults to 1.
+
+## Header Components
+Component type: **"header"**  
+Draws a text header, much like you'd see in the titles of categories and entries. Does not draw the separator line that appears below those.
+
+**Attributes:**
+* **text** (String, _mandatory_)
+
+The text to show here. This *can't* be formatted. Can be a variable.
+
+* **color** (String)
+
+The color of the text, in hex (e.g. "FF0000" would be pure red). If not set it defaults to the book's header color. Can be a variable.
+
+* **centered** (boolean)
+
+Defaults to true. Set to false to align the text to the left rather than center.
+
+* **scale** (float)
+
+The scale at which you want to display this headear. Defaults to 1.
+
+* The "x" value of this component can be set to -1, and it'll default to the horizontal center of the page. 
+* The "y" value can also be set to -1, and if you do, it'll default to the same position where headers are for the default pages.
+
+## Entity Components
+Component type: **"entity"**  
+Renders an entity which rotates around.
+
+**Attributes:**
+
+* **entity** (String, _mandatory_)
+
+The ID of the entity you want to display. To display a chicken you'd use "minecraft:chicken". You can also add NBT data to the entity, in the same way you would in an [ItemStack String](https://github.com/Vazkii/Patchouli/wiki/ItemStack-String-Format). Can be a variable.
+
+* **render_size** (integer)
+
+The size of the canvas to render this entity on. Defaults to 100, which means the entity will be rendered in a 100x100 box.
+
+## Separator Components
+Component type: **"separator"**  
+Draws a separator line using your book's texture.
+
+**Does not have any additional attributes.** 
+* The "x" value of this component can be set to -1, and it'll default to the horizontal center of the page. 
+* The "y" value can also be set to -1, and if you do, it'll default to the same position where separators are for the default pages.
+
+## Frame Components
+Component type: **"frame"**  
+Draws a frame for a 200x200 image using your book's texture. This looks just like the frame on framed images in image pages.
+
+**Does not have any additional attributes.** 
+
+* The "x" value of this component can be set to -1, and it'll default to the horizontal center of the page. 
+* The "y" value can also be set to -1, and if you do, it'll default to the same position where frames are for the default pages.
+
+## Custom Components
+Component type: **"custom"**  
+Modders only: Does whatever you'd like! You can pass in an instance of an interface in the patchouli API for it to instantiate and pass stuff to.
+
+**WIP**
