@@ -1,4 +1,4 @@
-This page specifies the various template components added by Patchouli. These pages should be used in Templates, in the "components" array, via specifying which type you want by using "type" on each object. You can read more in [Using Templates](https://github.com/Vazkii/Patchouli/wiki/Using-Templates).
+This page specifies the various template components provided by Patchouli. These pages should be used in Templates, in the "components" array, via specifying which type you want by using "type" on each object. You can read more in [Using Templates](https://github.com/Vazkii/Patchouli/wiki/Using-Templates).
 
 The following attributes are common to every component type:
 
