@@ -16,6 +16,10 @@ A resource location to point at, to make a page appear when that advancement is 
 
 A config flag expression that determines whether this page should exist or not. See [Using Config Flags](https://github.com/Vazkii/Patchouli/wiki/Using-Config-Flags) for more info on config flags.
 
+* **anchor** (String)
+
+An anchor can be used elsewhere to refer to this specific page in an internal link. See [Text-Formatting-101] for more details about internal links.
+
 ## Example Usage
 
 Here's an example of using a text page:
