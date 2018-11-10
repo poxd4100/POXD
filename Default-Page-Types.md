@@ -18,7 +18,7 @@ A config flag expression that determines whether this page should exist or not. 
 
 * **anchor** (String)
 
-An anchor can be used elsewhere to refer to this specific page in an internal link. See [Text-Formatting-101] for more details about internal links.
+An anchor can be used elsewhere to refer to this specific page in an internal link. See [Text Formatting 101](Text-Formatting-101) for more details about internal links.
 
 ## Example Usage
 
