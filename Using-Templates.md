@@ -72,4 +72,4 @@ A list of templates to include in this one. See [Template Nesting](https://githu
 
 * **processor** (String)
 
-For modders only: A class name for the processor class that takes care of this template. A processor class can derive data from your code into variables defined in the template. See [Template Processors](https://github.com/Vazkii/Patchouli/wiki/Nesting-Components) for how to use them.
+For modders only: A class name for the processor class that takes care of this template. A processor class can derive data from your code into variables defined in the template. See [Template Processors](https://github.com/Vazkii/Patchouli/wiki/Template-Processors) for how to use them.
