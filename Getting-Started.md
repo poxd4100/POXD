@@ -23,7 +23,7 @@ You may have as many books as you want, even within the same mod(pack). Naturall
 
 Note that creating an "en_us" folder means you're creating the "english" version of your book. The contents you put in the "en_us" folder are always the "main" ones loaded, so even if your book isn't meant to be natively in english, you need to put your main stuff there.
 
-Any translators may create folders with their languages and override any files they wish. They're automatically loaded if the game language is changed.
+Any translators may create folders with their languages and override any files they wish. They're automatically loaded if the game language is changed. For translators: Please don't include in your folder anything you aren't overriding.
 
 ### 3. Populate book.json
 Open up your book.json using your favorite text editor, and fill it in as follows:
