@@ -88,6 +88,14 @@ The sound effect played when opening this book. This is a resource location poin
 
 The sound effect played when flipping through pages in this book. This is a resource location pointing to the sound (which, for mooders, needs to be properly registered). 
 
+* **index_icon** (String)
+
+The icon to display for the Book Index. This can either be an [ItemStack String](https://github.com/Vazkii/Patchouli/wiki/ItemStack-String-Format), if you want an item to be the icon, or a resource location pointing to a square texture. If you want to use a resource location, make sure to end it with .png. This is optional, and if you don't include it, it'll default to the book's icon (which is the recommended value).
+
+* **show_progress** (boolean)
+
+Defaults to true. Set to false to disable the advancement progress bar, even if advancements are enabled.
+
 * **version** (String)
 
 The "edition" of the book. This defaults to "0", and setting this to any other numerical value (let's call it X) will display "X Edition" in the book's tooltip and landing page (e.g. X being 3 would display "3rd Edition"). Setting this to "0" or not modifying it will instead display whatever you set the "subtitle" key as. If the value is non-numerical, it'll display "Writer's Edition".
