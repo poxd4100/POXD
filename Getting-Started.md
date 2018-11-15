@@ -104,7 +104,7 @@ You're done getting set up, now it's time to learn more about what you can do wi
 
 Lastly, here's a few pointers you should take in mind.
 
-* The patchouli book item's ID is "patchouli:item", the NBT tag for a specific book is `{"patchouli:book": "BOOKMOD:BOOKID"}`
+* The patchouli book item's ID is "patchouli:guide_book", the NBT tag for a specific book is `{"patchouli:book": "BOOKMOD:BOOKID"}`
     * For example, a book in /assets/yourmod/patchouli_books/coolbook would be `{"patchouli:book": "yourmod:coolbook"}`
     * Books loaded from the patchouli_books folder in your instance folder have "patchouli" as the mod ID
     * If you need a CraftTweker script, grab your book and do `/mt hand`
