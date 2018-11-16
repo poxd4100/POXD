@@ -72,11 +72,11 @@ The color of link text, in hex ("RRGGBB", # not necessary). Defaults to "0000EE"
 
 The color of hovered link text, in hex ("RRGGBB", # not necessary). Defaults to "8800EE".
 
-* **proress_bar_color** (String)
+* **progress_bar_color** (String)
 
 The color of advancement progress bar, in hex ("RRGGBB", # not necessary). Defaults to "FFFF55".
 
-* **proress_bar_background** (String)
+* **progress_bar_background** (String)
 
 The color of advancement progress bar's background, in hex ("RRGGBB", # not necessary). Defaults to "DDDDDD".
 
