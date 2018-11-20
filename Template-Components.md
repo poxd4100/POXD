@@ -74,6 +74,8 @@ Draws an item, which you can hover over to see its tooltip, or click to open the
 
 An [ItemStack String](https://github.com/Vazkii/Patchouli/wiki/ItemStack-String-Format) representing the item you want to show. Can be a variable.
 
+Advanced usage of this value is possible. You may use `ore:ORENAME`, to display all items matching the ore dictionary key ORENAME, or you may display multiple stacks at once by separating them with commas (e.g. `minecraft:diamond,minecraft:emerald`). In both cases, they alternate with time.
+ 
 * **framed** (boolean)
 
 Defaults to false. If true, it'll draw a small frame around the item in the same way that the recipe pages does for the output.
