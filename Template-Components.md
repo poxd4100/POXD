@@ -175,6 +175,25 @@ Draws a frame for a 200x200 image using your book's texture. This looks just lik
 * The "x" value of this component can be set to -1, and it'll default to the horizontal center of the page. 
 * The "y" value can also be set to -1, and if you do, it'll default to the same position where frames are for the default pages.
 
+## Tooltip Components
+Component type: **"tooltip"**  
+Makes the GUI render a tooltip when the cursor is over the section specified here.
+
+
+**Attributes:**
+
+* **tooltip** (String Array, _mandatory_)
+
+An array of lines for the tooltip to display. All strings inside the array can be variables individually. Empty strings or missing variables are ignored. You can use control/color codes by using & instead of §.
+
+* **width** (integer, _mandatory_)
+
+The width of this tooltip area. 
+
+* **height** (integer, _mandatory_)
+
+The height of this tooltip area.
+
 ## Custom Components
 Component type: **"custom"**  
 Modders only: Does whatever you'd like! You can pass in an instance of an interface in the patchouli API for it to instantiate and pass stuff to.
