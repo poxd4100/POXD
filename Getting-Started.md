@@ -104,6 +104,10 @@ You're done getting set up, now it's time to learn more about what you can do wi
 
 ### 7. Use the Book Item
 
+Here's a few templates on how to use your book's item. For all cases, replace `YOURBOOKID` with the ID of your book (the name of the folder that contains the book.json file). If your folder is called "coolbook" then the ID is:
+* `patchouli:coolbook` if you're a pack maker.
+* `YOURMODID:coolbook` if you're a modder.
+
 **CraftTweaker**:  
 `<patchouli:guide_book>.withTag({"patchouli:book": "YOURBOOKID"});`  
 or just use `/ct hand`
@@ -115,6 +119,8 @@ or just use `/ct hand`
     "patchouli:book": "YOURBOOKID"
 }
 ```
+
+
 
 ### 8. Some Pointers
 
