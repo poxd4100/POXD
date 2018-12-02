@@ -142,4 +142,6 @@ Defaults to true. Set it to false if you don't want your book to show toast noti
 
 Formatting macros this book should use. See [Text Formatting 101](https://github.com/Vazkii/Patchouli/wiki/Text-Formatting-101) for more info on how you can define these and what they do.
 
+### Extension Keys
+
 There are some additional keys related to extending books in [Extending other Books](https://github.com/Vazkii/Patchouli/wiki/Extending-other-Books/).
