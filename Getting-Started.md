@@ -102,12 +102,22 @@ You're done getting set up, now it's time to learn more about what you can do wi
     * [Default Page Types](https://github.com/Vazkii/Patchouli/wiki/Default-Page-Types)
 * [Using Templates](https://github.com/Vazkii/Patchouli/wiki/Using-Templates)
 
-Lastly, here's a few pointers you should take in mind.
+### 7. Use the Book Item
 
-* The patchouli book item's ID is "patchouli:guide_book", the NBT tag for a specific book is `{"patchouli:book": "BOOKMOD:BOOKID"}`
-    * For example, a book in /assets/yourmod/patchouli_books/coolbook would be `{"patchouli:book": "yourmod:coolbook"}`
-    * Books loaded from the patchouli_books folder in your instance folder have "patchouli" as the mod ID
-    * If you need a CraftTweker script, grab your book and do `/mt hand`
+**CraftTweaker**:  
+`<patchouli:guide_book>.withTag({"patchouli:book": "YOURBOOKID"});`  
+or just use `/ct hand`
+
+**Vanilla Recipes/Advancements**:
+```
+"item": "patchouli:guide_book",
+"nbt": {
+    "patchouli:book": "YOURBOOKID"
+}
+```
+
+### 8. Some Pointers
+
 * For modpack makers, if you want to use your own images, textures, sounds, or other assets, you'll need a tool to load them in, such as [Resource Loader](https://minecraft.curseforge.com/projects/resource-loader).
 * You need to reload the game to load new book.json files, but not the book contents.
 * Book contents are purely client sided, whereas book.json files are loaded by the server too.
