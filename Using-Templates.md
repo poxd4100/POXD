@@ -30,7 +30,7 @@ Let's start with a small tutorial on how to create a template.
 ```
 
 * Try it out ingame. Your page should show the text you set it to. Feel free to change the text and the x and y positions.
-* Go back to your test_template.json file, and change the value of "text" to "#test". This is a _variable_, and we can set its value from the entry!
+* Go back to your test_template.json file, and change the value of "text" to "#text". This is a _variable_, and we can set its value from the entry!
 * Go back to the entry that's using your template, and change the page to this:
 ```
 {
