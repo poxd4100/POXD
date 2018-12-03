@@ -162,6 +162,14 @@ The scale to display the entity at. Defaults to 1.0. Values lower than 1.0 will 
 
 An amount to offset the entity display. Some mod entities have weird renders and won't fit in the box properly, you can change this to move them up and down.
 
+* **rotate** (boolean)
+
+Defaults to true. Set this to false to make the entity not rotate.
+
+* **default_rotation** (float)
+
+The rotation at which this entity should be rendered. This value is only used if "rotate" is false. The default is -45.
+
 * **name** (String)
 
 The name to display on top of the frame. If this is empty or not defined, it'll grab the name of the entity and use that instead.
