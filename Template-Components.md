@@ -160,6 +160,14 @@ The ID of the entity you want to display. To display a chicken you'd use "minecr
 
 The size of the canvas to render this entity on. Defaults to 100, which means the entity will be rendered in a 100x100 box.
 
+* **rotate** (boolean)
+
+Defaults to true. Set this to false to make the entity not rotate.
+
+* **default_rotation** (float)
+
+The rotation at which this entity should be rendered. This value is only used if "rotate" is false. The default is -45.
+
 ## Separator Components
 Component type: **"separator"**  
 Draws a separator line using your book's texture.
