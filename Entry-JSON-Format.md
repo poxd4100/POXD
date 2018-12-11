@@ -59,3 +59,7 @@ Defaults to false. Set this to true if you want to entry to not show the unread 
 The sorting number for this entry. Defaults to 0. Entries with the same sorting number are sorted alphabetically, whereas entries with different sorting numbers are sorted from lowest to highest. Priority entries always show up first. 
 
 It's recommended you do NOT use this, as breaking the alphabetical sorting order can make things confusing, but it's left as an option.
+
+* **turnin** (String)
+
+The ID of an advancement the player needs to do to "complete" this entry. The entry will show up at the top of the list with a (?) icon next to it until this advancement is complete. This can be used as a quest system or simply to help guide players along a starting path.
