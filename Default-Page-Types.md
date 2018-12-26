@@ -230,6 +230,32 @@ The title of this page, to display above the links. If this is missing or empty,
 
 The text to display on this page, under the links. This text can be [formatted](https://github.com/Vazkii/Patchouli/wiki/Text-Formatting-101).
 
+## Quest Pages
+
+![](https://i.imgur.com/LRpRQdn.png)  
+Page type: **quest**
+
+**Notes:** 
+
+* Quest pages will make the entry they're in show up with a checkmark once the quest is completed. 
+* Entries that show up with a checkmark will show up at the end of the list to be out of the way. 
+* So it knows to mark it properly, **do not have multiple quest pages in a single entry**.
+* If you use a quest page, it's recommended you also use "[turnin](https://github.com/Vazkii/Patchouli/wiki/Entry-JSON-Format)" in the entry.
+
+**Attributes**:
+
+* **trigger** (String)
+
+The advancement that should be completed to clear this quest. You may leave this empty should you want the quest to be completed manually. The image shows a quest with "trigger" set on the left and one with it unset on the right.
+
+* **title** (String)
+
+The title of this page, to display above the links. If this is missing or empty, it'll show "Objective" instead.
+
+* **text** (String)
+
+The text to display on this page, under the links. This text can be [formatted](https://github.com/Vazkii/Patchouli/wiki/Text-Formatting-101).
+
 ## Empty Pages
 
 ![](https://i.imgur.com/9gv6Dje.png)  
