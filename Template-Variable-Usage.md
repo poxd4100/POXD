@@ -20,7 +20,7 @@ Should you then define the variable "inline_text" in your entry json as such:
 	"inline_text": "anything you want"
 ```
 
-The text block you would see displayed ingame would be _"String interpolation with anything you want in the middle of the string!"_.
+The text block you would see displayed ingame would be _"String interpolation with anything you want in the middle of the string!"_. You can inline as many variables as you want.
 
 ## String Derivation
 
