@@ -196,6 +196,10 @@ A custom title to show instead on top of the item. If this is empty or not defin
 
 Defaults to false. Set this to true to mark this spotlight page as the "recipe page" for the item being spotlighted. If you do so, when looking at pages that display the item, you can shift-click the item to be taken to this page. Highly recommended if the spotlight page has instructions on how to create an item by non-conventional means.
 
+* **text** (String)
+
+The text to display on this page, under the item. This text can be [formatted](https://github.com/Vazkii/Patchouli/wiki/Text-Formatting-101).
+
 ## Link Pages
 
 ![](https://i.imgur.com/AQST9Jf.png)  
