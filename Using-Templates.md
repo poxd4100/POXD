@@ -40,8 +40,11 @@ Let's start with a small tutorial on how to create a template.
 ```
 
 * Try the edited look ingame, and you'll see your template took the "text" value from your page and put it where "#text" was. This is how you load in variable values onto your template. 
-    * You can have as many variables as you want, so you could have two text components in different positions with either the same "#text" value (if you want them to say the same thing), or for example, "#upper_text" and "#lower_text".
-    * Note: You can't use any variables such that their names are already common keys for pages. This means you can't use any of the names described in the first section of [Default Page Types](https://github.com/Vazkii/Patchouli/wiki/Default-Page-Types).
+   
+Some notes on variables:
+ * You can have as many variables as you want, so you could have two text components in different positions with either the same "#text" value (if you want them to say the same thing), or for example, "#upper_text" and "#lower_text".
+ * You can't use any variables such that their names are already common keys for pages. This means you can't use any of the names described in the first section of [Default Page Types](https://github.com/Vazkii/Patchouli/wiki/Default-Page-Types).
+ * You can learn about more advanced variable usage such as inlining them in strings or deriving them in the [Template Variable Usage](https://github.com/Vazkii/Patchouli/wiki/Template-Variable-Usage) page.
 
 ## Template JSON Format
 
