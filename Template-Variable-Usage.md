@@ -24,4 +24,21 @@ The text block you would see displayed ingame would be _"String interpolation wi
 
 ## String Derivation
 
-Variables can have other data derived from them. For example, a variable you'd fill with an [ItemStack String](https://github.com/Vazkii/Patchouli/wiki/ItemStack-String-Format) can be 
+Variables can have other data derived from them. For example, a variable you'd fill with an [ItemStack String](https://github.com/Vazkii/Patchouli/wiki/ItemStack-String-Format) can be derived to get the item's name.
+
+Deriving variables can be done by applying a function onto them. To do so, you append `->func` to the variable, replacing "func" with the function you want to apply. For example, should "item" be a variable with an ItemStack String, to get its item name, you'd use `#item->iname`.
+
+**Function List**
+
+* *iname*: Apply to variables that contain ItemStack strings. Derives the item's display name.
+* *icount*: Apply to variables that contain ItemStack strings. Derives the amount of items in the stack.
+* *ename*: Apply to variables that contain entity IDs. Derives the entity's display name.
+* *upper*: Derives the variable's value, but in *UPPERCASE*.
+* *lower*: Derives the variable's value, but in *lowercase*.
+* *capital*: Derives the variable's value, but in *First word only capital*.
+* *fcapital*: Derives the variable's value, but in *Fully Capitalized*
+
+**Other Points**
+
+* You can derive variables that are used inline, so `This recipe produces #item->iname#.` is valid.
+* You can derive multiple times, so `#item->iname->capital` is valid.
