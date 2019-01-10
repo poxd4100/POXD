@@ -22,11 +22,15 @@ A resource location to point at, to make a component appear when that advancemen
 
 Defaults to false. If set to true, the *advancement* field will be negated, making the component only show if the advancement hasn't been gotten yet.
 
+* **guard** (String)
+
+A [Variable Function](https://github.com/Vazkii/Patchouli/wiki/Template-Variable-Usage#string-derivation) that determines whether the component should show. If this function resolves to "false" or an empty string, the component will not display.
+
 * **flag** (String)
 
 A config flag expression that determines whether this component should show or not. See [Using Config Flags](https://github.com/Vazkii/Patchouli/wiki/Using-Config-Flags) for more info on config flags.
 
-* **group** (String, _mandatory_)
+* **group** (String)
 
 Modders only: The group this element belongs to. Groups are only used to allow [Component Processors](https://github.com/Vazkii/Patchouli/wiki/Component-Processors) to hide individual components based on code-level conditions.
 
