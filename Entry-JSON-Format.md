@@ -18,7 +18,7 @@ The icon for this entry. This can either be an [ItemStack String](https://github
 
 The array of pages for this entry. In the following format:
 
-```
+```json
 [
     {
         "type": "TYPE",
