@@ -32,7 +32,7 @@ Variables in an included template can be resolved in the entry that is using the
 
 But what if you want a different name? That's doable as well! Open up a "using" object inside your inclusion object, it should look something like this, for our case:
 
-``` 
+```json
 "include": [
     {
         "template": "sometemplate",
@@ -47,14 +47,14 @@ But what if you want a different name? That's doable as well! Open up a "using" 
 Inside the "using" block, we can set values for the variables inside our included template. You can either directly set the value of what you want, or just put another variable on the other side to be resolved by the parent (be it either the entry page itself, or another template that may be including yours).
 
 Let's say we want the included template's text to always be "I'm an included template". We can do the following:
-``` 
+```json
 "using": {
     "text": "I'm an included template"
 }
 ``` 
 
 We can also bind it to any other variable:
-``` 
+```json
 "using": {
     "text": "#text"
 }
