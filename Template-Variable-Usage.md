@@ -16,7 +16,7 @@ Variables can be inlined into any strings in the template. You do this by wrappi
 
 Should you then define the variable "inline_text" in your entry json as such:
 
-```
+```json
 	"inline_text": "anything you want"
 ```
 
