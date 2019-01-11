@@ -14,7 +14,7 @@ As a demonstration of how to create a multiblock, we'll be using the following..
 
 A multiblock can be defined using a JSON object. Let's begin with an empty one and add in as we go.
 
-```
+```json
 "multiblock": {
 
 }
@@ -47,7 +47,7 @@ We then define our mapping using internal IDs and appending block state values i
 * **W**: minecraft:wool
 
 Looks good. Let's put these mappings into our json using a "mapping" block:
-```
+```json
 "multiblock": {
     "mapping": {
          "G": "minecraft:gold_block",
@@ -60,7 +60,7 @@ Looks good. Let's put these mappings into our json using a "mapping" block:
 ### The Pattern
 
 Now that we told the multiblock what blocks to use, we need to tell it the shape. To do this, we go from the top to bottom, layer by layer, and transpose each layer to a string array. Let's start with the first layer with the plus made of terracotta. It would look something like this:
-```
+```json
 [
 " GRG ",
 "GGRGG",
@@ -71,11 +71,11 @@ Now that we told the multiblock what blocks to use, we need to tell it the shape
 ```
 
 Recall that G is gold, R is red terracotta, and empty spaces are air. We can compress this a little so it doesn't look as bulky now:  
-``` [ " GRG ", "GGRGG", "RRRRR", "GGRGG", " GRG " ] ```
+```json [ " GRG ", "GGRGG", "RRRRR", "GGRGG", " GRG " ] ```
 
 It doesn't look as readable now that we aren't projecting it as a bird's eye view, but don't worry, it'll look good in a second. With that said, we put it into the "pattern" array, and follow through, adding in all the following layers:
 
-```
+```json
 "pattern": [
     [ " GRG ", "GGRGG", "RRRRR", "GGRGG", " GRG " ],
     [
@@ -111,7 +111,7 @@ It doesn't look as readable now that we aren't projecting it as a bird's eye vie
 
 ...and compressing them:
 
-```
+```json
 "pattern": [
     [ " GRG ", "GGRGG", "RRRRR", "GGRGG", " GRG " ], 
     [ "GG GG", "G   G", "     ", "G   G", "GG GG" ],
@@ -128,7 +128,7 @@ We specify the center by replacing one of the characters in the pattern with a z
 The "zero" of the multiblock is placed at the player's world cursor. On less fancy words, if you were to place a block, where it would end up is where the zero ends up. 
 
 Knowing that, the ideal right place for the zero of this structure would be in the geometrical center, but one block down so that it's right above the W:
-```
+```json
 "pattern": [
     [ " GRG ", "GGRGG", "RRRRR", "GGRGG", " GRG " ], 
     [ "GG GG", "G   G", "     ", "G   G", "GG GG" ],
@@ -156,7 +156,7 @@ For our case, we'll be setting symmetrical to true, and not specifying offset, a
 
 Let's add our pattern, mapping, and other values together, and we get:
 
-```
+```json
 "multiblock": {
     "pattern": [
         [ " GRG ", "GGRGG", "RRRRR", "GGRGG", " GRG " ], 
