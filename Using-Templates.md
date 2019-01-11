@@ -52,7 +52,7 @@ Some notes on variables:
 
 The array of components this template comes with. In the following format:
 
-```json
+```
 [
     {
         "type": "TYPE",
