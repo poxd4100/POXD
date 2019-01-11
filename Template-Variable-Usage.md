@@ -35,10 +35,15 @@ Deriving variables can be done by applying a function onto them. To do so, you a
 * *ename*: Apply to variables that contain entity IDs. Derives the entity's display name.
 * *upper*: Derives the variable's value, but in *UPPERCASE*.
 * *lower*: Derives the variable's value, but in *lowercase*.
+* *trim*: Derives the variable's value with all leading and trailing whitespace trimmed out.
 * *capital*: Derives the variable's value, but in *First word only capital*.
 * *fcapital*: Derives the variable's value, but in *Fully Capitalized*
+* *exists*: Derives "false" if the variable's value is an empty string, "true" otherwise.
+* *iexists*: Derives "true" if the variable contains an ItemStack string with an existing, non-empty stack, "false" otherwise.
+* *inv*: Derives "true" if the  variable's value is "false" (case insensitive), "false" otherwise.
 
 **Other Points**
 
 * You can derive variables that are used inline, so `This recipe produces #item->iname#.` is valid.
 * You can derive multiple times, so `#item->iname->capital` is valid.
+* The functions that derive to "true" and "false" can be used with the "guard" field in template components.
