@@ -5,7 +5,7 @@ If you're not familiar with templates or using variables therein, please read th
 ## Inline Variables
 
 Variables can be inlined into any strings in the template. You do this by wrapping the variable name in #, as follows:
-```
+```json
 {
 	"type": "text",
 	"text": "String interpolation with #inline_text# in the middle of the string!",
