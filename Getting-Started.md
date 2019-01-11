@@ -113,7 +113,7 @@ Here's a few templates on how to use your book's item. For all cases, replace `Y
 or just use `/ct hand`
 
 **Vanilla Recipes/Advancements**:
-```
+```json
 "item": "patchouli:guide_book",
 "nbt": {
     "patchouli:book": "YOURBOOKID"
