@@ -7,7 +7,7 @@ Templates are created and referenced in a similar manner to entries and categori
 Let's start with a small tutorial on how to create a template.
 
 * Go to /patchouli_books/YOURBOOK/en_us/templates, and create a "test_template.json" file, and fill it as such:
-```
+```json
 {
 	"components": [
 		{
@@ -23,7 +23,7 @@ Let's start with a small tutorial on how to create a template.
 * Create a new entry for your book, and lay it out in any way you like. In one of the pages, set the page type to be "test_template". 
     * Since there's no default page type with this name, the loader will look for any templates your book has with this name.
     * Naturally, this means you can't have templates named the same way as default page types.
-```
+```json
 {
     "type": "test_template"
 }
@@ -32,7 +32,7 @@ Let's start with a small tutorial on how to create a template.
 * Try it out ingame. Your page should show the text you set it to. Feel free to change the text and the x and y positions.
 * Go back to your test_template.json file, and change the value of "text" to "#text". This is a _variable_, and we can set its value from the entry!
 * Go back to the entry that's using your template, and change the page to this:
-```
+```json
 {
     "type": "test_template",
     "text": "We just passed in the text from a variable!"
@@ -52,7 +52,7 @@ Some notes on variables:
 
 The array of components this template comes with. In the following format:
 
-```
+```json
 [
     {
         "type": "TYPE",
