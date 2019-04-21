@@ -138,7 +138,7 @@ Following from the previous key, if you do have a custom book, set it here. This
 
 Defaults to true. Set it to false if you don't want your book to show toast notifications when new entries are available.
 
-* **blocky_font** (boolean)
+* **use_blocky_font** (boolean)
 
 Defaults to false. Set it to true to use the vanilla blocky font rather than the slim font. If you have a font mod, it'll use whichever font that mod is providing instead.
 
