@@ -10,7 +10,7 @@ A Multiblock is composed of a 2 dimensional String Array (the pattern), and a ma
 
 As a demonstration of how to create a multiblock, we'll be using the following... thing as a demonstration:
 
-![](https://i.imgur.com/s7hMVe8.png)
+![](https://i.imgur.com/M6Fw6nP.png)
 
 A multiblock can be defined using a JSON object. Let's begin with an empty one and add in as we go.
 
@@ -26,23 +26,28 @@ We'll begin by discussing which types of blocks we have here. Looking at the pic
 
 * Gold Blocks
 * Red Terracotta
-* Gray Wool (which for this demo we want to allow it to be any color)
+* Magenta Wool (which for this demo we want to allow it to be any color)
+* Note Block (tuned to note 4)
 * Air
 * A few corners we can't see, but let's say they're allowed to be any block
 
 Once we know what types of blocks this structure uses, we assign a letter to each:
 
 * **G**: Gold Blocks
+* **B**: Note Block (note 4)
 * **R**: Red Terracotta
 * **W**: Any Wool
 
 Patchouli already provides built in characters for Air and (Any Block), which are respectively a space, and an underscore, so we don't have to account for those.
 
+<details>
+<summary>Next, for 1.12</summary>
 Now, we need to convert these to data the game can understand. There's two cases in here you'll have to think about. Just matching against the block type, or matching a block with a particular state. In this case, Red Terracotta is the same  block as Blue Terracotta, so we need to account for that.
 
 We then define our mapping using internal IDs and appending block state values in square brackets after if needed. If multiple block state values are needed we just separate them with a comma, but that won't be needed here. Any states you don't want to match against, you simply don't include. Therefore, we have:
 
 * **G**: minecraft:gold_block
+* **B**: minecraft:noteblock[note=4]
 * **R**: minecraft:stained_hardened_clay[color=red]
 * **W**: minecraft:wool
 
@@ -51,11 +56,35 @@ Looks good. Let's put these mappings into our json using a "mapping" block:
 "multiblock": {
     "mapping": {
          "G": "minecraft:gold_block",
+         "B": "minecraft:noteblock[note=4]",
          "R": "minecraft:stained_hardened_clay[color=red]",
          "W": "minecraft:wool"
      }
 }
 ```
+</details>
+
+<details>
+<summary>Next, for 1.14+</summary>
+Now, we need to convert these to data the game can understand. Patchouli uses the same vanilla logic to parse blockstate predicate as, for example, the `/execute if block ~ ~ ~ <PREDICATE>` command. This means you can use block ID's, tags, as well as specify blockstate properties you want to constraint. Therefore, we have:
+
+* **G**: minecraft:gold_block
+* **B**: minecraft:note_block[note=4]
+* **R**: minecraft:red_terracotta
+* **W**: \#minecraft:wool
+
+Looks good. Let's put these mappings into our json using a "mapping" block:
+```json
+"multiblock": {
+    "mapping": {
+         "G": "minecraft:gold_block",
+         "B": "minecraft:note_block[note=4]",
+         "R": "minecraft:red_terracotta",
+         "W": "#minecraft:wool"
+     }
+}
+```
+</details>
 
 ### The Pattern
 
