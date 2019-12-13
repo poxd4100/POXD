@@ -40,32 +40,6 @@ Once we know what types of blocks this structure uses, we assign a letter to eac
 
 Patchouli already provides built in characters for Air and (Any Block), which are respectively a space, and an underscore, so we don't have to account for those.
 
-<details>
-<summary>Next, for 1.12</summary>
-Now, we need to convert these to data the game can understand. There's two cases in here you'll have to think about. Just matching against the block type, or matching a block with a particular state. In this case, Red Terracotta is the same  block as Blue Terracotta, so we need to account for that.
-
-We then define our mapping using internal IDs and appending block state values in square brackets after if needed. If multiple block state values are needed we just separate them with a comma, but that won't be needed here. Any states you don't want to match against, you simply don't include. Therefore, we have:
-
-* **G**: minecraft:gold_block
-* **B**: minecraft:noteblock[note=4]
-* **R**: minecraft:stained_hardened_clay[color=red]
-* **W**: minecraft:wool
-
-Looks good. Let's put these mappings into our json using a "mapping" block:
-```json
-"multiblock": {
-    "mapping": {
-         "G": "minecraft:gold_block",
-         "B": "minecraft:noteblock[note=4]",
-         "R": "minecraft:stained_hardened_clay[color=red]",
-         "W": "minecraft:wool"
-     }
-}
-```
-</details>
-
-<details>
-<summary>Next, for 1.14+</summary>
 Now, we need to convert these to data the game can understand. Patchouli uses the same vanilla logic to parse blockstate predicate as, for example, the `/execute if block ~ ~ ~ <PREDICATE>` command. This means you can use block ID's, tags, as well as specify blockstate properties you want to constraint. Therefore, we have:
 
 * **G**: minecraft:gold_block
@@ -84,7 +58,6 @@ Looks good. Let's put these mappings into our json using a "mapping" block:
      }
 }
 ```
-</details>
 
 ### The Pattern
 
