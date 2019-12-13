@@ -5,14 +5,8 @@ In multiple places in the book, you'll see values that can be filled with "ItemS
 Any of the following are allowed:
 
 * **namespace:path** (e.g. `"minecraft:sword"`)
-* **namespace:path:meta** (e.g. `"minecraft:wool:10"`)
 * **namespace:path#count** (e.g. `"minecraft:stone#64"`)
 * **namespace:path{nbt}** (e.g. `"minecraft:diamond_pickaxe{display:{Lore:['A really cool pickaxe']}"`
-* **namespace:path:meta#count**
 * **namespace:path#count{nbt}**
-* **namespace:path:meta{nbt}**
-* **namespace:path:meta#count{nbt}**
 
 To represent NBT tags with text inside, you can either replace all double quotes (`"`) with single quotes (`'`), or escape them (`\"`). If you want to write a single quote, you'll have to double-escape it (`\\'`).
-
-Metadata is not supported in 1.14+ as it has been removed from the game. To set tool damage, use NBT instead.
