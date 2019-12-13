@@ -6,7 +6,7 @@ Pretty obvious. For modders, you can load it as a lib to your mod project or jus
 ### 1. Locate your patchouli_books directory
 Your books and their contents will go in your patchouli_books directory, so you need to find it.
 * For modpack makers, it'll be in your instance folder (next to mods, config, etc). Note that you need to run the game with patchouli installed for it to show up (or just make it yourself).
-* For modders, it'll be /assets/_YOURMODID_/patchouli_books, you'll have to make it yourself.
+* For modders, it'll be /data/_YOURMODID_/patchouli_books, you'll have to make it yourself.
 
 ### 2. Create your folder structure
 Once you found patchouli_books, decide on a name for your book. Only lower case characters and underscores are allowed. This is purely an internal name so feel free to call it whatever you want, or just "book" if you're lazy, nobody's gonna mind. After you have a name, create folders and files inside patchouli_books so that it looks like this:
