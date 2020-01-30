@@ -21,7 +21,7 @@ Formatting codes can be tested out in real time using the ingame editor (the pen
 * **$(k:...)** - Inserts the key value of the keybind you place after "k:". Read below for how get the keybind name
 * **$(t:...)** - Makes any text after this one show the text you place after "t:" as a tooltip when hovered
 * **$(/t)** -  End Link, ends the current tooltip but maintains formatting ($() also ends tooltips)
-* **$(c:/command here)** - Makes the player send this command to the server when clicked. Use with the vanilla `/trigger` command, scoreboard objectives, and mcfunctions.
+* **$(c:/command here)** - Makes the player send this command to the server when clicked. Use with the vanilla `/trigger` command, scoreboard objectives, and mcfunctions. The leading slash *must* be present.
 * **$(/c)** -  End Command, ends the current command but maintains formatting ($() also ends commands)
 
 **Using $(k:...)**:  
