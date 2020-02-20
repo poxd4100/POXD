@@ -11,5 +11,5 @@ Here's a few articles to get you started:
 * [Text Formatting 101](https://github.com/Vazkii/Patchouli/wiki/Text-Formatting-101)
 
 Here's some important parts of the repository you may be interested in checking out:
-* [Book Examples](../tree/master/src/main/resources/assets/patchouli/patchouli_books)
+* [Book Examples](../tree/master/src/main/resources/data/patchouli/patchouli_books)
 * [API for Modders](../tree/master/src/main/java/vazkii/patchouli/api)
