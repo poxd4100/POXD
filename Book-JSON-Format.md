@@ -10,6 +10,8 @@ The text that will be displayed in the landing page of your book. This text can 
 
 * **advancement_namespaces** (String Array)
 
+**As of Patchouli 1.15.2-1.2-28, this field is no longer necessary, and any advancement can be used to lock content.**
+
 The advancement namespaces this book uses for locking its entries. Any namespaces used need to be declared here so Patchouli knows to track them and listen for them to unlock stuff. As an example, if you use "yourmod:cooladvancement" in one of your entries, you need to have "yourmod" in this array. See [Locking Content with Advancements](https://github.com/Vazkii/Patchouli/wiki/Locking-Content-with-Advancements) for more information on advancement locking.
 
 Adding "minecraft" to this array isn't allowed to prevent a needlessly large amount of data from being sent around.
