@@ -11,6 +11,7 @@ Entries in your Patchouli books can be locked until certain Advancements are acc
     * If the the "advancement_namespaces" array isn't present yet, create it: `"advancement_namespaces": []`
     * Add the namespace to the "advancement_namespaces" array: `"advancement_namespaces": [ "mymod" ]`
     * Adding the namespace here tells patchouli that it needs to keep track of advancements in that namespace. You only have to do it once per namespace. If you have multiple books that use the namespace, only one needs it, but it's good practice to have it in all of them.
+    * As of Patchouli 1.15.2-1.2-28, this is no longer necessary, and any advancement may be used to gate your content.
     * See [Book JSON Format](https://github.com/Vazkii/Patchouli/wiki/Book-JSON-Format) for more info.
 
 * You may also lock individual pages behind advancements. This is allowed but not exactly encouraged, as it can be confusing to players if you aren't conveying the information properly.
