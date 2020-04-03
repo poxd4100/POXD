@@ -1,7 +1,13 @@
 This entry serves as a quick guide of what to do to get started making your own Patchouli books, read on and follow carefully!
 
+## Prerequisites
+* Minecraft
+* Patchouli
+* Working knowledge of the [JSON](https://en.wikipedia.org/wiki/JSON) data format.
+
 ### 0. Install Patchouli
-Pretty obvious. For modders, you can load it as a lib to your mod project or just drop it in your workspace's mods folder. The prefered way is to use maven, which you find the address for in the repo's readme.
+Pretty obvious. For modders, you can load it as a lib to your mod project or just drop it in your workspace's mods folder. The preferred way is to use maven, which you find the address for in the repo's readme.
+For non-modders, obtain the mod through the usual distribution channels.
 
 ### 1. Locate your patchouli_books directory
 Your books and their contents will go in your patchouli_books directory, so you need to find it.
