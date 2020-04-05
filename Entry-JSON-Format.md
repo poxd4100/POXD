@@ -63,3 +63,7 @@ It's recommended you do NOT use this, as breaking the alphabetical sorting order
 * **turnin** (String)
 
 The ID of an advancement the player needs to do to "complete" this entry. The entry will show up at the top of the list with a (?) icon next to it until this advancement is complete. This can be used as a quest system or simply to help guide players along a starting path.
+
+* **extra_recipe_mappings** (Object String -> Int)
+
+Additional list of items this page teaches the crafting process for, for use with the in-world right click and quick lookup feature. Keys are ItemStack strings, values are 0-indexed page numbers.
