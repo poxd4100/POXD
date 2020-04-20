@@ -152,6 +152,10 @@ Default false. If set to true, attempts to look up category, entry, and page tit
 
 Formatting macros this book should use. See [Text Formatting 101](https://github.com/Vazkii/Patchouli/wiki/Text-Formatting-101) for more info on how you can define these and what they do.
 
+* **pause_game** (boolean)
+
+Default true. When set true, opening any GUI from this book will pause the game in singleplayer.
+
 ### Extension Keys
 
 There are some additional keys related to extending books in [Extending other Books](https://github.com/Vazkii/Patchouli/wiki/Extending-other-Books/).
