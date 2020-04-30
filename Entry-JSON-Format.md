@@ -8,7 +8,7 @@ The name of this entry.
 
 * **category** (String, _mandatory_)
 
-The category this entry belongs to. This must be set to one of your categories' ID.
+The category this entry belongs to. This must be set to one of your categories' ID. For best results, use a fully-qualified ID that includes your book namespace `yourbooknamespace:categoryname`. In the future this will be enforced.
 
 * **icon** (String, _mandatory_)
 
