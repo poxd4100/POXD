@@ -25,9 +25,9 @@ Once you found patchouli_books, decide on a name for your book. Only lower case 
             * categories (empty folder)
             * templates (empty folder)
 
-You may have as many books as you want, even within the same mod(pack). Naturally each one should have a different ID. For ID'ing purposes ingame, each book is assigned an id in the form of "_YOURMODID:YOURBOOKID_", or "patchouli:_YOURBOOKID_" if you're loading them as a modpack maker.
+You may have as many books as you want, even within the same mod(pack). Naturally each one should have a different ID. For ID'ing purposes ingame, each book is assigned an id in the form of "_YOURMODID:YOURBOOKID_", or "patchouli:_YOURBOOKID_" if you're loading them as a modpack maker. The part in front of the colon is henceforth referred to as the *namespace* of your book.
 
-Note that creating an "en_us" folder means you're creating the "english" version of your book. The contents you put in the "en_us" folder are always the "main" ones loaded, so even if your book isn't meant to be natively in english, you need to put your main stuff there.
+Note that creating an "en_us" folder means you're creating the "English" version of your book. The contents you put in the "en_us" folder are always the "main" ones loaded, so even if your book isn't meant to be natively in english, you need to put your main stuff there.
 
 Any translators may create folders with their languages and override any files they wish. They're automatically loaded if the game language is changed. For translators: Please don't include in your folder anything you aren't overriding.
 
@@ -75,7 +75,7 @@ Open test_entry.json and test_category.json and fill them in as follows:
 {
     "name": "Test Entry",
     "icon": "minecraft:writable_book",
-    "category": "test_category",
+    "category": "yourbooknamespace:test_category",
     "pages": [
         {
             "type": "text",
@@ -110,9 +110,7 @@ You're done getting set up, now it's time to learn more about what you can do wi
 
 ### 7. Use the Book Item
 
-Here's a few templates on how to use your book's item. For all cases, replace `YOURBOOKID` with the ID of your book (the name of the folder that contains the book.json file). If your folder is called "coolbook" then the ID is:
-* `patchouli:coolbook` if you're a pack maker.
-* `YOURMODID:coolbook` if you're a modder.
+Here's a few examples of how to use your book's item. As a refresher, your book's *namespace* is your mod id, if you're a modder, and `patchouli`, if you're a pack maker. Then, if your folder is called "coolbook" then your *book ID* is `yourbooknamespace:coolbook`.
 
 **CraftTweaker**:  
 `<patchouli:guide_book>.withTag({"patchouli:book": "YOURBOOKID"});`  
@@ -125,8 +123,6 @@ or just use `/ct hand`
     "patchouli:book": "YOURBOOKID"
 }
 ```
-
-
 
 ### 8. Some Pointers
 
