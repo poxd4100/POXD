@@ -25,7 +25,7 @@ Let's start with a small tutorial on how to create a template.
     * Naturally, this means you can't have templates named the same way as default page types.
 ```json
 {
-    "type": "test_template"
+    "type": "yourbooknamespace:test_template"
 }
 ```
 
@@ -34,7 +34,7 @@ Let's start with a small tutorial on how to create a template.
 * Go back to the entry that's using your template, and change the page to this:
 ```json
 {
-    "type": "test_template",
+    "type": "yourbooknamespace:test_template",
     "text": "We just passed in the text from a variable!"
 }
 ```
