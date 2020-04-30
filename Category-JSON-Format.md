@@ -16,7 +16,7 @@ The icon for this category. This can either be an [ItemStack String](https://git
 
 * **parent** (String)
 
-The parent category to this one. If this is a sub-category, simply put the name of the category this is a child to here. If not, don't define it.
+The parent category to this one. If this is a sub-category, simply put the name of the category this is a child to here. If not, don't define it. Use fully-qualified names including both a namespace and a path.
 
 * **flag** (String)
 
