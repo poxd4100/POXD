@@ -60,8 +60,12 @@ Looks good. Let's put these mappings into our json using a "mapping" block:
 ```
 
 ### The Pattern
+Now that we told the multiblock what blocks to use, we need to tell it the shape. To do this, we go from the top to bottom, layer by layer, and translate each layer to a string array.
 
-Now that we told the multiblock what blocks to use, we need to tell it the shape. To do this, we go from the top to bottom, layer by layer, and transpose each layer to a string array. Let's start with the first layer with the plus made of terracotta. It would look something like this:
+Terse explanation of the format: the pattern attribute is an array of array of strings. It is indexed in the following order: y (top to bottom), x (west to east), then z (north to south).
+
+Full explanation:
+Let's start with the first layer with the plus made of terracotta. It would look something like this:
 ```json
 [
 " GRG ",
@@ -139,6 +143,26 @@ Knowing that, the ideal right place for the zero of this structure would be in t
     [ "_WWW_", "WWWWW", "WWWWW", "WWWWW", "_WWW_" ]
 ]
 ```
+
+### Extra Notes on the Pattern
+Observe carefully that the pattern directions conform to programming conventions, not to the cardinal directions.
+For example, to lay out stairs with their `facing` property set to the appropriate side of the multiblock, you would have to do this:
+```
+"pattern": [
+  [
+    " W ",
+    "N S",
+    " E "
+  ]
+],
+"mapping": {
+  "W": "minecraft:oak_stairs[facing=west]",
+  "N": "minecraft:oak_stairs[facing=north]",
+  "S": "minecraft:oak_stairs[facing=south]",
+  "E": "minecraft:oak_stairs[facing=east]",
+}
+```
+This is due to the fact that the inner array is indexed by x (later entries being further east), then the strings are indexed by z (later characters being further south).
 
 ### Some Extra Things
 
