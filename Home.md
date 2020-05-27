@@ -11,7 +11,7 @@ Here's a few articles to get you started:
 * [Text Formatting 101](https://github.com/Vazkii/Patchouli/wiki/Text-Formatting-101)
 
 Here's some important parts of the repository you may be interested in checking out:
-* Full test book using most all features of the mod (1.12 version, by WhisperFire26): [here](https://github.com/Vazkii/Patchouli/files/4685191/Patchouli.1.12.2.testbook.zip)
+* Full test book using most all features of the mod (1.12 version, by @WhisperFire26): [here](https://github.com/Vazkii/Patchouli/files/4685191/Patchouli.1.12.2.testbook.zip)
 * Full test book using most all features of the mod (1.15 version): TBD
 * [Book Examples](../tree/master/src/main/resources/data/patchouli/patchouli_books)
 * [API for Modders](../tree/master/src/main/java/vazkii/patchouli/api)
