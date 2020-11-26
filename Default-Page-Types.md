@@ -53,7 +53,7 @@ Page type: **"image"**
 **Attibutes**:
 * **images** (String Array, _mandatory_)
 
-An array with images to display. Images should be in resource location format. For example, the value `botania:textures/gui/entries/banners.png` will point to `/assets/botania/textures/gui/entries/banners.png` in the resource pack. For modpack creators, this means that any images you want to use must be loaded with an external resource pack (or a mod such as Resource Loader). Images used here should ideally be dimensioned as 256x256, and use only a 200x200 canvas centered in the top-left corner for contents, which are rendered at a 0.5x scale compared to the rest of the book in pixel size.
+An array with images to display. Images should be in resource location format. For example, the value `botania:textures/gui/entries/banners.png` will point to `/assets/botania/textures/gui/entries/banners.png` in the resource pack. For modpack creators, this means that any images you want to use must be loaded with an external resource pack (or a mod such as Resource Loader). For best results, make your image file 256 by 256, but only place content in the upper left 200 by 200 area. This area is then rendered at a 0.5x scale compared to the rest of the book in pixel size.
 
 If there's more than one image in this array, arrow buttons are shown like in the picture, allowing the viewer to switch between images. If there's only one image, they're not.
 
