@@ -212,7 +212,7 @@ The height of this tooltip area.
 Component type: **"custom"**  
 Modders only: Does whatever you'd like! You can pass in an instance of an interface in the patchouli API for it to instantiate and pass stuff to.
 
-Here's a [test example](https://github.com/Vazkii/Patchouli/blob/master/src/main/java/vazkii/patchouli/client/book/template/test/TestCustomComponent.java) you can refer to. 
+Here's a [test example](https://github.com/Vazkii/Patchouli/blob/master/src/main/java/vazkii/patchouli/client/book/template/test/ComponentCustomTest.java) you can refer to. 
 
 **Attributes:**
 
