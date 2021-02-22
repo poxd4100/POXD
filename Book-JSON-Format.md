@@ -122,7 +122,8 @@ The creative tab to display your book in. This defaults to Miscellaneous, but yo
 8. combat
 9. brewing
 
-For modders, simply put in the same string you use when constructing your creative tab here, and the book will show up there.
+For modders, simply put in the same string you use when constructing your creative tab here, and the book will show up there.  
+On Fabric, the replace the `:` with a `.` in the identifier you used.
 
 * **advancements_tab** (String)
 
