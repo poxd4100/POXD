@@ -7,7 +7,7 @@ Please check the [vanilla wiki](https://minecraft.fandom.com/wiki/Advancement/JS
 Below is a brief example:
 
 `/data/yourdomain/advancements/grant_book_on_first_join.json`:
-```
+```json
 {
   "criteria": {
     "tick": {
@@ -23,7 +23,7 @@ Below is a brief example:
 ```
 
 `/data/yourdomain/loot_tables/grant_book_on_first_join.json`:
-```
+```json
 {
   "type": "advancement_reward",
   "pools": [
