@@ -1,6 +1,6 @@
 Patchouli does not have native functionality to give books to players as they join. However, this functionality is easily replicated using vanilla advancements.
 
-What we will do is to provide a hidden advancement that triggers for a player immediately (their first tick after logging in). The reward for this advancement will be the book. 
+What we will do is to provide a hidden advancement that triggers for a player immediately whose reward is the book. Advancement rewards are one-time-only, so unless the advancement is revoked from the player, this should happen once, immediately when the player joins the world for the first time.
 
 Please check the [vanilla wiki](https://minecraft.fandom.com/wiki/Advancement/JSON_format) for details.
 
