@@ -8,7 +8,7 @@ Below is a brief example:
 
 `/data/yourdomain/advancements/grant_book_on_first_join.json`:
 ```
-
+{
   "criteria": {
     "tick": {
       "trigger": "minecraft:tick"
