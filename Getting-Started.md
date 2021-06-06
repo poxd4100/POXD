@@ -127,7 +127,7 @@ or just use `/ct hand`
 ### 8. Some Pointers
 
 * For modpack makers, if you want to use your own images, textures, sounds, or other assets, you'll need a tool to load them in, such as [Resource Loader](https://minecraft.curseforge.com/projects/resource-loader).
-* To grant your book to new players automatically, see [this page](../Giving-Books-to-New-Players)
+* To grant your book to new players automatically, see [this page](./Giving-Books-to-New-Players)
 * You need to reload the game to load new book.json files, but not the book contents.
 * Book contents are purely client sided, whereas book.json files are loaded by the server too.
 * You don't have to put your entries in folders corresponding to the categories they belong in, but it helps with organization!
