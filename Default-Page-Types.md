@@ -26,14 +26,14 @@ Here's an example of using a text page:
 
 ```json
 {
-    "type": "text",
+    "type": "patchouli:text",
     "text": "This is an example"
 }
 ```  
 
 ## Text Pages
 ![](https://i.imgur.com/cYGwnxb.png)  
-Page type: **"text"**
+Page type: **"patchouli:text"**
 
 **Text pages should always be the first page in any entry**. If a text page is the first page in an entry, it'll display the header you see in the left page. For all other pages, it'll display as you can see in the right one.
 
@@ -48,7 +48,7 @@ An optional title to display at the top of the page. If you set this, the rest o
 
 ## Image Pages
 ![](https://i.imgur.com/NnWb10b.png)  
-Page type: **"image"**
+Page type: **"patchouli:image"**
 
 **Attibutes**:
 * **images** (String Array, _mandatory_)
@@ -72,7 +72,7 @@ The text to display on this page, under the image. This text can be [formatted](
 ## Crafting Recipe Pages
 
 ![](https://i.imgur.com/ySSi5zL.png)  
-Page type: **"crafting"**
+Page type: **"patchouli:crafting"**
 
 **Attibutes**:
 * **recipe** (String, _mandatory_)
@@ -96,7 +96,7 @@ Note: the text will not display if there are two recipes with two different outp
 ## Smelting Recipe Pages
 
 ![](https://i.imgur.com/noBfGCc.png)  
-Page type: **"smelting"**
+Page type: **"patchouli:smelting"**
 
 **Attibutes**:
 * **recipe** (String, _mandatory_)
@@ -118,7 +118,7 @@ The text to display on this page, under the recipes. This text can be [formatted
 ## Multiblock Pages
 
 ![](https://i.imgur.com/uTt7Zsc.png)  
-Page type: **"multiblock"**
+Page type: **"patchouli:multiblock"**
 
 * **name** (String, _mandatory_)
 
@@ -147,7 +147,7 @@ The text to display on this page, under the multiblock. This text can be [format
 ## Entity Pages
 
 ![](https://i.imgur.com/suEQTN4.png)  
-Page type: **entity**
+Page type: **patchouli:entity**
 
 **Attibutes**:
 * **entity** (String, _mandatory_)
@@ -181,7 +181,7 @@ The text to display on this page, under the entity. This text can be [formatted]
 ## Spotlight Pages
 
 ![](https://i.imgur.com/W7ezngF.png)  
-Page type: **"spotlight"**
+Page type: **"patchouli:spotlight"**
 
 **Attibutes**:
 * **item** (String, _mandatory_)
@@ -203,7 +203,7 @@ The text to display on this page, under the item. This text can be [formatted](h
 ## Link Pages
 
 ![](https://i.imgur.com/AQST9Jf.png)  
-Page type: **link**
+Page type: **patchouli:link**
 
 **Note:** Link pages are just specialized Text pages, which means they can work just like text pages, with the additional link button on the bottom. They also have all the attributes text pages do, and you can use them as the first page in your entry.
 
@@ -219,7 +219,7 @@ The text to display on the link button.
 ## Relations Pages
 
 ![](https://i.imgur.com/rBaxf4d.png)  
-Page type: **relations**
+Page type: **patchouli:relations**
 
 **Attributes**:
 * **entries** (String Array)
@@ -237,7 +237,7 @@ The text to display on this page, under the links. This text can be [formatted](
 ## Quest Pages
 
 ![](https://i.imgur.com/LRpRQdn.png)  
-Page type: **quest**
+Page type: **patchouli:quest**
 
 **Notes:** 
 
@@ -263,7 +263,7 @@ The text to display on this page, under the links. This text can be [formatted](
 ## Empty Pages
 
 ![](https://i.imgur.com/9gv6Dje.png)  
-Page type: **empty**
+Page type: **patchouli:empty**
 
 **Attributes**:
 * **draw_filler** (boolean)
