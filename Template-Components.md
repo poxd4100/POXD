@@ -4,7 +4,7 @@ The following attributes are common to every component type:
 
 * **type** (String, _mandatory_)
 
-What type this component is. This isn't used by the component itself, but rather by the loader to determine what component should be loaded. For example, if you want a text component, you set this to "text".
+What type this component is. This isn't used by the component itself, but rather by the loader to determine what component should be loaded. For example, if you want a text component, you set this to "patchouli:text". This should be fully-qualified and of the form `domain:name` where `domain` is the same as the domain of your Book ID.
 
 * **x** (integer)
 
@@ -40,7 +40,7 @@ Here's an example of using a text component:
 
 ```json
 {
-    "type": "text",
+    "type": "patchouli:text",
     "text": "This is an example",
     "x": 20,
     "y": 30
@@ -48,7 +48,7 @@ Here's an example of using a text component:
 ```  
 
 ## Text Components
-Component type: **"text"**  
+Component type: **"patchouli:text"**  
 Draws a text block, which supports [formatting](https://github.com/Vazkii/Patchouli/wiki/Text-Formatting-101).
 
 **Attributes:**
@@ -69,7 +69,7 @@ The maximum width allowed for a line in this block. If not set, it defaults to t
 The height of each line. The default is 9, which is what patchouli uses everywhere else. If you set this to more than that, there will be space between the text lines. If you set it to less, the lines will overlap and look bad.
 
 ## Item Components
-Component type: **"item"**  
+Component type: **"patchouli:item"**  
 Draws an item, which you can hover over to see its tooltip, or click to open the page that shows how to craft it, if there's one.
 
 **Attributes:**
@@ -89,7 +89,7 @@ Defaults to false. If true, it'll draw a small frame around the item in the same
 Defaults to false. Set this to true to mark any page this component is used in as the "recipe page" for the item being shown. If you do so, when looking at pages that display the item, you can shift-click the item to be taken to the page that uses this component.
 
 ## Image Components
-Component type: **"image"**  
+Component type: **"patchouli:image"**  
 Draws an image, or part of it.
 
 **Attributes:**
@@ -127,7 +127,7 @@ The height of the image you want to draw. If you don't set this it'll default to
 The scale at which you want to display this image. Defaults to 1.
 
 ## Header Components
-Component type: **"header"**  
+Component type: **"patchouli:header"**  
 Draws a text header, much like you'd see in the titles of categories and entries. Does not draw the separator line that appears below those.
 
 **Attributes:**
@@ -151,7 +151,7 @@ The scale at which you want to display this headear. Defaults to 1.
 * The "y" value can also be set to -1, and if you do, it'll default to the same position where headers are for the default pages.
 
 ## Entity Components
-Component type: **"entity"**  
+Component type: **"patchouli:entity"**  
 Renders an entity which rotates around.
 
 **Attributes:**
@@ -173,7 +173,7 @@ Defaults to true. Set this to false to make the entity not rotate.
 The rotation at which this entity should be rendered. This value is only used if "rotate" is false. The default is -45.
 
 ## Separator Components
-Component type: **"separator"**  
+Component type: **"patchouli:separator"**  
 Draws a separator line using your book's texture.
 
 **Does not have any additional attributes.** 
@@ -181,7 +181,7 @@ Draws a separator line using your book's texture.
 * The "y" value can also be set to -1, and if you do, it'll default to the same position where separators are for the default pages.
 
 ## Frame Components
-Component type: **"frame"**  
+Component type: **"patchouli:frame"**  
 Draws a frame for a 200x200 image using your book's texture. This looks just like the frame on framed images in image pages.
 
 **Does not have any additional attributes.** 
@@ -190,7 +190,7 @@ Draws a frame for a 200x200 image using your book's texture. This looks just lik
 * The "y" value can also be set to -1, and if you do, it'll default to the same position where frames are for the default pages.
 
 ## Tooltip Components
-Component type: **"tooltip"**  
+Component type: **"patchouli:tooltip"**  
 Makes the GUI render a tooltip when the cursor is over the section specified here.
 
 
@@ -209,7 +209,7 @@ The width of this tooltip area.
 The height of this tooltip area.
 
 ## Custom Components
-Component type: **"custom"**  
+Component type: **"patchouli:custom"**  
 Modders only: Does whatever you'd like! You can pass in an instance of an interface in the patchouli API for it to instantiate and pass stuff to.
 
 Here's a [test example](https://github.com/Vazkii/Patchouli/blob/master/src/main/java/vazkii/patchouli/client/book/template/test/ComponentCustomTest.java) you can refer to. 
