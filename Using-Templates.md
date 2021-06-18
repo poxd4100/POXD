@@ -11,7 +11,7 @@ Let's start with a small tutorial on how to create a template.
 {
 	"components": [
 		{
-			"type": "text",
+			"type": "patchouli:text",
 			"text": "Hello this is a test of the template system!",
 			"x": 20,
 			"y": 30
