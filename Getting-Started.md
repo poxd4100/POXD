@@ -25,7 +25,7 @@ Once you found patchouli_books, decide on a name for your book. Only lower case 
             * categories (empty folder)
             * templates (empty folder)
 
-You may have as many books as you want, even within the same mod(pack). Naturally each one should have a different ID. For ID'ing purposes ingame, each book is assigned an id in the form of "_YOURMODID:YOURBOOKID_", or "patchouli:_YOURBOOKID_" if you're loading them as a modpack maker. The part in front of the colon is henceforth referred to as the *namespace* of your book.
+You may have as many books as you want, even within the same mod(pack). Naturally each one should have a different ID. For ID'ing purposes ingame, each book is assigned an id in the form of "_YOURMODID:YOURBOOKID_", or "patchouli:_YOURBOOKID_" if you're loading them as a modpack maker. The part in front of the colon is henceforth referred to as the *namespace* or *domain* of your book.
 
 Note that creating an "en_us" folder means you're creating the "English" version of your book. The contents you put in the "en_us" folder are always the "main" ones loaded, so even if your book isn't meant to be natively in english, you need to put your main stuff there.
 
