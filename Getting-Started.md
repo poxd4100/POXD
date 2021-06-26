@@ -78,7 +78,7 @@ Open test_entry.json and test_category.json and fill them in as follows:
     "category": "yourbooknamespace:test_category",
     "pages": [
         {
-            "type": "text",
+            "type": "patchouli:text",
             "text": "This is a test entry, but it should show up!"
         }
     ]
