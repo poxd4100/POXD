@@ -6,7 +6,9 @@ Please check the [vanilla wiki](https://minecraft.fandom.com/wiki/Advancement/JS
 
 Below is a brief example:
 
-`/data/yourdomain/advancements/grant_book_on_first_join.json`:
+Replace `yourbooknamespace` with the namespace part of your book ID (see [Getting Started](https://github.com/Vazkii/Patchouli/wiki/Getting-Started)) for information about your book ID.
+
+`/data/yourbooknamespace/advancements/grant_book_on_first_join.json`:
 ```json
 {
   "criteria": {
@@ -16,13 +18,13 @@ Below is a brief example:
   },
   "rewards": {
     "loot": [
-      "yourdomain:grant_book_on_first_join"
+      "yourbooknamespace:grant_book_on_first_join"
     ]
   }
 }
 ```
 
-`/data/yourdomain/loot_tables/grant_book_on_first_join.json`:
+`/data/yourbooknamespace/loot_tables/grant_book_on_first_join.json`:
 ```json
 {
   "type": "advancement_reward",
