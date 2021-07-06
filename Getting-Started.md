@@ -15,17 +15,18 @@ Your books and their contents will go in your patchouli_books directory, so you 
 * For modders, it'll be /data/_YOURMODID_/patchouli_books, you'll have to make it yourself.
 
 ### 2. Create your folder structure
-Once you found patchouli_books, decide on a name for your book. Only lower case characters and underscores are allowed. This is purely an internal name so feel free to call it whatever you want, or just "book" if you're lazy, nobody's gonna mind. After you have a name, create folders and files inside patchouli_books so that it looks like this:
+Once you found patchouli_books, decide on a name for your book. Only lower case characters and underscores are allowed. This is the internal name for your book, and we encourage you to make it distinctive. For mods, you should name it after what the book is for (e.g. `lexicon` for Botania). For modpacks, name it something with your modpack's name, for example `crucial_2_guide_book`. After you have a name, create folders and files inside patchouli_books so that it looks like this:
 
 * patchouli_books
-    * _YOURBOOKNAME_ (folder)
+    * `<the name you just chose>` (folder)
         * book.json (empty file)
         * en_us (folder)
             * entries (empty folder)
             * categories (empty folder)
             * templates (empty folder)
 
-You may have as many books as you want, even within the same mod(pack). Naturally each one should have a different ID. For ID'ing purposes ingame, each book is assigned an id in the form of "_YOURMODID:YOURBOOKID_", or "patchouli:_YOURBOOKID_" if you're loading them as a modpack maker. The part in front of the colon is henceforth referred to as the *namespace* or *domain* of your book.
+You may have as many books as you want, even within the same mod(pack).
+Each book has a [Namespaced ID](https://minecraft.fandom.com/wiki/Namespaced_ID). If the book is part of a mod, the namespace is that mod's mod ID. If the book is loaded from the extenral `patchouli_books` folder, the namespace is `patchouli`. The name part of the namespaced ID is the name you chose above.
 
 Note that creating an "en_us" folder means you're creating the "English" version of your book. The contents you put in the "en_us" folder are always the "main" ones loaded, so even if your book isn't meant to be natively in english, you need to put your main stuff there.
 
