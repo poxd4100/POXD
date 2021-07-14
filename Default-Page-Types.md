@@ -6,7 +6,7 @@ The following attributes are common to every page type:The ID of the entity you 
 
 * **type** (String, _mandatory_)
 
-What type this page is. This isn't used by the page itself, but rather by the loader to determine what page should be loaded. For example, if you want a text page, you set this to "patchouli:text". This should be fully-qualified and of the form `domain:name`. For the builting page types defined here, the domain is `patchouli`.
+What type this page is. This isn't used by the page itself, but rather by the loader to determine what page should be loaded. For example, if you want a text page, you set this to "patchouli:text". This should be fully-qualified in 1.17 and later and of the form `domain:name`. For the built-in page types defined here, the domain is `patchouli`. In 1.16 or earlier version, you should leave out everything up to and including the colon, so it would be `text`.
 
 * **advancement** (String)
 
