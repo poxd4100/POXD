@@ -1,3 +1,8 @@
+# DEPRECATED
+
+This wiki (as hosted on Github wikis) has been deprecated in favor of an externally-hosted wiki at
+https://vazkiimods.github.io/Patchouli/. Sorry for the inconvenience.
+
 Welcome to **Patchouli**, a mod aimed at providing High Quality Data-Driven Documentation for Modders and Modpack Makers. Mouthful of a slogan isn't it?
 
 ![Front page of a Patchouli demo book](https://i.imgur.com/yIwTTRr.png)
