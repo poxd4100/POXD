@@ -8,16 +8,16 @@ Welcome to **Patchouli**, a mod aimed at providing High Quality Data-Driven Docu
 ![Front page of a Patchouli demo book](https://i.imgur.com/yIwTTRr.png)
 
 Here's a few articles to get you started:
-* **[Getting Started](https://github.com/Vazkii/Patchouli/wiki/Getting-Started)**
-* [Book JSON Format](https://github.com/Vazkii/Patchouli/wiki/Book-JSON-Format)
-* [Category JSON Format](https://github.com/Vazkii/Patchouli/wiki/Category-JSON-Format)
-* [Entry JSON Format](https://github.com/Vazkii/Patchouli/wiki/Entry-JSON-Format)
-* [Default Page Types](https://github.com/Vazkii/Patchouli/wiki/Default-Page-Types)
-* [Text Formatting 101](https://github.com/Vazkii/Patchouli/wiki/Text-Formatting-101)
+* **[Getting Started](https://vazkiimods.github.io/Patchouli/docs/patchouli-basics/getting-started)**
+* [Book JSON Format](https://vazkiimods.github.io/Patchouli/docs/reference/book-json)
+* [Category JSON Format](https://vazkiimods.github.io/Patchouli/docs/reference/category-json)
+* [Entry JSON Format](https://vazkiimods.github.io/Patchouli/docs/reference/entry-json)
+* [Default Page Types](https://vazkiimods.github.io/Patchouli/docs/patchouli-basics/page-types)
+* [Text Formatting 101](https://vazkiimods.github.io/Patchouli/docs/patchouli-basics/text-formatting)
 
 Further references:
+* [Book Examples](../tree/master/src/main/resources/data/patchouli/patchouli_books)
 * Full test book using most all features of the mod (1.12 version, by @WhisperFire26): [here](https://github.com/Vazkii/Patchouli/files/4685191/Patchouli.1.12.2.testbook.zip)
 * Full test book using most all features of the mod (1.15 version, by @WhisperFire26): [here](https://github.com/Vazkii/Patchouli/files/4691281/Patchouli.1.15.2.testbook.zip)
-* [Book Examples](../tree/master/src/main/resources/data/patchouli/patchouli_books)
 * [API for Modders](../tree/master/src/main/java/vazkii/patchouli/api)
 * [Discord](https://vazkii.net/discord) for support (visit channel `#patchouli`)
